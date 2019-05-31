@@ -174,8 +174,8 @@
 
 .hero-image-text h2 {
   font-family: 'Work Sans', sans-serif;
-  font-weight: 200;
-  font-size: 2vw;
+  font-weight: 400;
+  font-size: 1.8vw;
   color: white;
   margin: auto;
   padding: 5px;
@@ -390,12 +390,25 @@
 }
 
 .about-section h2 {
-  margin-top: 10%;
+  margin-top: 5%;
   margin-bottom: 5%;
   font-size: 4vw;
   font-weight: 400;
   -webkit-text-stroke: 1px white;
   -webkit-text-fill-color: rgba(255, 255, 255, 0);
+  opacity: 0;
+}
+
+.about-section h3 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1.2vw;
+  color: white;
+  text-transform: uppercase;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 0;
+  margin-bottom: 0;
   opacity: 0;
 }
 
@@ -683,7 +696,7 @@ text-align: center;
   }
 
   .hero-image-text h2 {
-    font-size: 2.5vw;
+    font-size: 2vw;
   }
 
   .home-social-media {
@@ -740,7 +753,7 @@ text-align: center;
   }
 
   .hero-image-text h2 {
-    font-size: 4vw;
+    font-size: 2vw;
   }
 
   .home-social-media {
@@ -830,7 +843,7 @@ text-align: center;
   }
 
   .hero-image-text h2 {
-    font-size: 5vw;
+    font-size: 3.5vw;
   }
 
   .home-social-media {
@@ -845,6 +858,10 @@ text-align: center;
 
   .about-section h2, .contact-section h2 {
     font-size: 6vw;
+  }
+
+  .about-section h3 {
+    font-size: 2.5vw;
   }
 
   #home-social-mail, #home-social-linkedin, #home-social-instagram, #home-social-whatsapp {
@@ -862,7 +879,7 @@ text-align: center;
   }
 
   p {
-    font-size: 2.2vw;
+    font-size: 2.3vw;
   }
 
   #button-about, #button-contact {
@@ -893,7 +910,7 @@ text-align: center;
   }
 
   .rectangle {
-    height: 35% !important;
+    height: auto !important;
   }
 
   /*description for images*/
@@ -923,6 +940,23 @@ text-align: center;
     width: 22%;
     right: 0;
     border-right: none;
+  }
+
+/*rectangle portfolio images back to full width*/
+  .rectangle {
+    width: 95% !important;
+  }
+
+  .right {
+    margin-left: 0;
+    width: 100%;
+    padding-right: 3%;
+  }
+
+  .left {
+    margin-left: 0;
+    width: 100%;
+    padding-right: 3%;
   }
 
 

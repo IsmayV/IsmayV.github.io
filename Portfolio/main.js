@@ -12,6 +12,9 @@ function transition1() {
     $("h2").delay(3000).animate({
       opacity: 1
     }, 1000);
+    $("h3").delay(3000).animate({
+      opacity: 1
+    }, 1000);
 }
 
 function transition2() {
