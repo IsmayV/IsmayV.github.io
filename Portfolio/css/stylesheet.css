@@ -48,7 +48,7 @@
     left: 0;
 }
 
-#page-about {
+#div_hero2 {
     background-image: url(https://IsmayV.github.io/Portfolio/Images/layoutLeftLQIP.jpg);
     height: 100%;
     background-repeat: no-repeat;
@@ -58,7 +58,7 @@
     z-index: 0;
 }
 
-#page-work {
+#div_hero3 {
     background-image: url(https://IsmayV.github.io/Portfolio/Images/layoutRightLQIP.jpg);
     height: 100%;
     background-repeat: no-repeat;

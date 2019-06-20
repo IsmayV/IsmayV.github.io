@@ -1,7 +1,7 @@
 function transition1() {
     // Hide to left / show from left
     $("#page-home").toggle("slide", {direction:"right"}, 1000);
-    $("#page-about").toggle("slide", {direction:"left"}, 1000);
+    $("#div_hero2").toggle("slide", {direction:"left"}, 1000);
     $(".profile-section").animate({
       top: '0px'
     }, 2500, "easeOutCirc");
@@ -19,14 +19,14 @@ function transition1() {
 
 function transition2() {
     // Hide to left / show from left
-    $("#page-about").toggle("slide", {direction:"left"}, 1000);
+    $("#div_hero2").toggle("slide", {direction:"left"}, 1000);
     $("#page-home").toggle("slide", {direction:"right"}, 1000);
 }
 
 function transition3() {
     // Hide to left / show from left
     $("#page-home").toggle("slide", {direction:"left"}, 1000);
-    $("#page-work").toggle("slide", {direction:"right"}, 1000);
+    $("#div_hero3").toggle("slide", {direction:"right"}, 1000);
     $(".portfolio-section").animate({
       top: '0px'
     }, 2500, "easeOutCirc");
@@ -37,7 +37,7 @@ function transition3() {
 
 function transition4() {
     // Hide to left / show from left
-    $("#page-work").toggle("slide", {direction:"right"}, 1000);
+    $("#div_hero3").toggle("slide", {direction:"right"}, 1000);
     $("#page-home").toggle("slide", {direction:"left"}, 1000);
 }
 
@@ -84,6 +84,15 @@ function showDescription() {
   $(this).next('.description').fadeToggle();
 }
 
+function backgroundLoad() {
+  $(".img_highres").off().on("load", function() {
+     var id = $(this).attr("id");
+     var highres = $(this).attr("src").toString();
+     var target = "#div_" + id.substring(4);
+     $(target).css("background-image", "url(" + highres + ")");
+  });
+}
+
 $(document).ready(function() {
     $('.contact-section').slideUp();
     $('#button-about').addClass('selected');
@@ -108,14 +117,7 @@ $(document).ready(function() {
     $('.portfolio-image').click(showDescription);
 
     //replace lowres background images with highres versions
-    $(function() {
-         $(".img_highres").off().on("load", function() {
-            var id = $(this).attr("id");
-            var highres = $(this).attr("src").toString();
-            var target = "#div_" + id.substring(4);
-            $(target).css("background-image", "url(" + highres + ")");
-         });
-      });
+    backgroundLoad();
 
     //lozad lazy load
     const observer = lozad();
