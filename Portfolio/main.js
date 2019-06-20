@@ -106,4 +106,6 @@ $(document).ready(function() {
     $('#button-digital').click(toggleSectionDigital);
     $('#button-photography').click(toggleSectionPhotography);
     $('.portfolio-image').click(showDescription);
+    const observer = lozad();
+    observer.observe();
 });
