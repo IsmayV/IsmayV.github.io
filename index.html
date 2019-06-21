@@ -1,12 +1,13 @@
 <html>
 <head>
   <!-- meta data  site title-->
-  <title>Ismay Verbeek | Visual Artist</title>
+  <title>Ismay Verbeek | Front End Artist</title>
   <!-- import style sheet and fonts-->
-  <link href='Portfolio/css/stylesheet.css' type='text/css' rel='stylesheet'>
+  <link href='css/stylesheet.css' type='text/css' rel='stylesheet'>
   <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600,800" rel="stylesheet">
-  <link rel="shortcut icon" type="image/png" href="Portfolio/Images/favicon.jpg" style="width:16px;height:16px;">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/> <!--320-->
+  <link rel="shortcut icon" type="image/png" href="Images/favicon.jpg" style="width:16px;height:16px;">
+   <link rel="preload" href="https://IsmayV.github.io/Portfolio/Images/Peonies-background3.jpg" as="image">
+   <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 </head>
 <body>
   <!--container for pages-->
@@ -23,36 +24,38 @@
         </div>
       </div>
       <!--background hero image-->
-      <div class="hero-image">
+      <div id="div_hero1">
+        <img id="img_hero1" class="img_highres" src="https://IsmayV.github.io/Portfolio/Images/Peonies-background3.jpg">
       </div>
       <!--social media icons-->
       <div class="home-social-media">
         <a href="mailto:verbeek_ismay@hotmail.com?Subject=Hello!">
-          <img id="home-social-mail" src='Portfolio/Images/icon-mail2.png' alt='mail me'>
+          <img id="home-social-mail" src='Images/icon-mail2.png' alt='mail me'>
         </a>
         <a href="https://nl.linkedin.com/in/ismay-verbeek" target="_blank">
-          <img id="home-social-linkedin" src='Portfolio/Images/icon-linkedin2.png' alt ='linkedin'>
+          <img id="home-social-linkedin" src='Images/icon-linkedin2.png' alt ='linkedin'>
         </a>
         <a href="https://www.instagram.com/art.of.ismay/" target="_blank">
-          <img id="home-social-instagram" src='Portfolio/Images/icon-instagram2.png' alt='instagram'>
+          <img id="home-social-instagram" src='Images/icon-instagram2.png' alt='instagram'>
         </a>
       </div>
       <!--centered square with logo-->
       <div class="hero-image-center">
         <div class="hero-image-logo">
-          <img src="Portfolio/Images/Logo.png"></img>
+          <img src="./Images/Logo.png"></img>
         </div>
       </div>
       <div class="hero-image-text">
         <h1>ISMAY VERBEEK</h1>
-        <h2>VISUAL ARTIST & FRONT-END DEVELOPER</h2>
+        <h2>FRONT END ARTIST</h2>
       </div>
     </div>
 
 
 
     <!--about page-->
-    <div id="page-about" class="page nodisplay">
+    <div id="div_hero2" class="page nodisplay">
+      <img id="img_hero2" class="img_highres" src="https://IsmayV.github.io/Portfolio/Images/layoutLeft.jpg">
       <div class="navigation-about">
         <div class="navigation-column" id="nav-home1">
           <a class="scrollitemHome1"><h1>HOME</h1></a>
@@ -65,13 +68,12 @@
       <div class="profile-section">
 <!--about section --------------------------------------------------------->
         <div class="about-section">
-          <img id="profile-image" src='Portfolio/Images/profile-image.jpg' alt='me'>
+          <img id="profile-image" src='Images/profile-image.jpg' alt='me'>
           <h2>About me</h2>
-          <h3>Hi, my name is Ismay and I am a front-end developer and artist!</h3>
-          <p>I have a passion for creating online experiences focused on this mix of user experience and creativity.
-            My strong fundations as an allround artist/designer combine well with my technical skills of coding.
-            When I am not trying to create unique impressions, you can find me making ice cream or enjoying nature.
-          </p>
+          <p>1.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
+          commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
+          et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
+          ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
         </div>
 <!--contact section and form------------------------------------------------->
 
@@ -83,13 +85,13 @@
         <p>Simply give me a message on whatsapp, linkedin or send me an e-mail with one of the buttons below</p>
           <div class="about-social-media">
           <a href="https://api.whatsapp.com/send?phone=31641344745" target="_blank">
-            <img id="home-social-whatsapp" src='Portfolio/Images/icon-whatsapp2.png' alt ='whatsapp'>
+            <img id="home-social-whatsapp" src='Images/icon-whatsapp2.png' alt ='whatsapp'>
           </a>
           <a href="https://nl.linkedin.com/in/ismay-verbeek" target="_blank">
-            <img id="home-social-linkedin" src='Portfolio/Images/icon-linkedin2.png' alt ='linkedin'>
+            <img id="home-social-linkedin" src='Images/icon-linkedin2.png' alt ='linkedin'>
           </a>
           <a href="mailto:verbeek_ismay@hotmail.com?Subject=Hello!">
-            <img id="home-social-mail" src='Portfolio/Images/icon-mail2.png' alt='mail me'>
+            <img id="home-social-mail" src='Images/icon-mail2.png' alt='mail me'>
           </a>
         </div>
         <p>Or just give me a call: +31 6 41344745</p>
@@ -100,7 +102,8 @@
 
 
     <!--work page-->
-    <div id="page-work" class="page nodisplay">
+    <div id="div_hero3" class="page nodisplay">
+      <img id="img_hero3" class="img_highres" src="https://IsmayV.github.io/Portfolio/Images/layoutRight.jpg">
       <div class="navigation-work">
         <div class="navigation-column" id="nav-home2">
           <a class="scrollitemHome2"><h1>HOME</h1></a>
@@ -114,119 +117,123 @@
       <div class="portfolio-section">
         <!--digital section --------------------------------------------------------->
                 <div class="digital-section">
-                  <img class="portfolio-image" src='Portfolio/Images/DigitalConcept.png' alt='Digital Concept'>
+                  <img class="portfolio-image lozad" data-src='Images/DigitalConcept_lowres.jpg' alt='Digital Concept'>
                   <div class="description">
                     <p>Environmental Concept Colour Sketch</p>
                   </div>
-                  <img class="portfolio-image" src='Portfolio/Images/DigitalConcept3.jpg' alt='Digital Concept #2'>
+                  <img class="portfolio-image lozad" data-src='Images/DigitalConcept3_lowres.jpg' alt='Digital Concept #2'>
                   <div class="description">
                     <p>Environmental Concept Colour Sketch</p>
                   </div>
-                  <img class="portfolio-image rectangle" src='Portfolio/Images/DigitalIllustration.jpg' alt='Digital Illustration'>
+                  <img class="portfolio-image rectangle lozad" data-src='Images/DigitalIllustration_lowres.jpg' alt='Digital Illustration'>
                   <div class="description rectangle left">
                     <p>Poster Illustration <br> Subject: New Zealand Fauna & Flora</p>
                   </div>
-                  <img class="portfolio-image rectangle" src='Portfolio/Images/DigitalStudy.jpg' alt='Digital Study Anatomy'>
+                  <img class="portfolio-image rectangle lozad" data-src='Images/DigitalStudy_lowres.jpg' alt='Digital Study Anatomy'>
                   <div class="description rectangle right">
                     <p>Anatomy Study <br> Subject: The Abduction of Proserpina</p>
                   </div>
-                  <img class="portfolio-image" src='Portfolio/Images/DigitalConcept2.jpg' alt='Digital Concept'>
+                  <img class="portfolio-image lozad" data-src='Images/DigitalConcept2_lowres.jpg' alt='Digital Concept'>
                   <div class="description">
                     <p>Environmental Concept Colour Sketch</p>
                   </div>
-                  <img class="portfolio-image" src='Portfolio/Images/DigitalSketch.jpg' alt='Digital Sketch'>
+                  <img class="portfolio-image lozad" data-src='Images/Digital3D_lowres.jpg' alt='3D environment'>
+                  <div class="description">
+                    <p>3D Environment in Unreal Engine</p>
+                  </div>
+                  <img class="portfolio-image lozad" data-src='Images/DigitalSketch_lowres.jpg' alt='Digital Sketch'>
                   <div class="description">
                     <p>Environmental Sketch</p>
                   </div>
                   <div class="work-social-media">
                   <a href="https://api.whatsapp.com/send?phone=31641344745" target="_blank">
-                    <img id="home-social-whatsapp" src='Portfolio/Images/icon-whatsapp2.png' alt ='whatsapp'>
+                    <img id="home-social-whatsapp" src='Images/icon-whatsapp2.png' alt ='whatsapp'>
                   </a>
                   <a href="https://nl.linkedin.com/in/ismay-verbeek" target="_blank">
-                    <img id="home-social-linkedin" src='Portfolio/Images/icon-linkedin2.png' alt ='linkedin'>
+                    <img id="home-social-linkedin" src='Images/icon-linkedin2.png' alt ='linkedin'>
                   </a>
                   <a href="mailto:verbeek_ismay@hotmail.com?Subject=Hello!">
-                    <img id="home-social-mail" src='Portfolio/Images/icon-mail2.png' alt='mail me'>
+                    <img id="home-social-mail" src='Images/icon-mail2.png' alt='mail me'>
                   </a>
                 </div>
                 </div>
 <!--traditional section --------------------------------------------------------->
         <div class="traditional-section nodisplay">
-          <img class="portfolio-image" src="Portfolio/Images/TraditionalRosebottle.jpg">
+          <img class="portfolio-image lozad" data-src="Images/TraditionalRosebottle_lowres.jpg">
           <div class="description">
             <p>Materials: Gouache & Ink</p>
           </div>
-          <img class="portfolio-image rectangle" src="Portfolio/Images/TraditionalRose.jpg">
+          <img class="portfolio-image rectangle lozad" data-src="Images/TraditionalRose_lowres.jpg">
           <div class="description rectangle left">
             <p>Materials: Watercolour & Ink</p>
           </div>
-          <img class="portfolio-image rectangle" src="Portfolio/Images/TraditionalMagical.jpg">
+          <img class="portfolio-image rectangle lozad" data-src="Images/TraditionalMagical_lowres.jpg">
           <div class="description rectangle right">
             <p>Materials: Acryl Paint</p>
           </div>
-          <img class="portfolio-image" src="Portfolio/Images/TraditionalNorway.jpg">
+          <img class="portfolio-image lozad" data-src="Images/TraditionalNorway_lowres.jpg">
           <div class="description">
             <p>Materials: Oil Paint</p>
           </div>
-          <img class="portfolio-image rectangle" src="Portfolio/Images/TraditionalNewZealand.jpg">
+          <img class="portfolio-image rectangle lozad" data-src="Images/TraditionalNewZealand_lowres.jpg">
           <div class="description left">
             <p>Materials: Oil Paint</p>
           </div>
-          <img class="portfolio-image rectangle" src="Portfolio/Images/TraditionalInk.jpg">
+          <img class="portfolio-image rectangle lozad" data-src="Images/TraditionalInk_lowres.jpg">
           <div class="description right">
             <p>Materials: Ink</p>
           </div>
-          <img class="portfolio-image" src="Portfolio/Images/TraditionalStudy.jpg">
+          <img class="portfolio-image lozad" data-src="Images/TraditionalStudy_lowres.jpg">
           <div class="description">
             <p>Materials: Acryl Paint</p>
           </div>
           <div class="work-social-media">
           <a href="https://api.whatsapp.com/send?phone=31641344745" target="_blank">
-            <img id="home-social-whatsapp" src='Portfolio/Images/icon-whatsapp2.png' alt ='whatsapp'>
+            <img id="home-social-whatsapp" src='Images/icon-whatsapp2.png' alt ='whatsapp'>
           </a>
           <a href="https://nl.linkedin.com/in/ismay-verbeek" target="_blank">
-            <img id="home-social-linkedin" src='Portfolio/Images/icon-linkedin2.png' alt ='linkedin'>
+            <img id="home-social-linkedin" src='Images/icon-linkedin2.png' alt ='linkedin'>
           </a>
           <a href="mailto:verbeek_ismay@hotmail.com?Subject=Hello!">
-            <img id="home-social-mail" src='Portfolio/Images/icon-mail2.png' alt='mail me'>
+            <img id="home-social-mail" src='Images/icon-mail2.png' alt='mail me'>
           </a>
         </div>
         </div>
 <!--photography section --------------------------------------------------------->
         <div class="photography-section nodisplay">
-          <img class="portfolio-image" src='Portfolio/Images/PhotoSea.jpg' alt='Photo Langevelderseslag'>
+          <img class="portfolio-image lozad" data-src='Images/PhotoSea_lowres.jpg' alt='Photo Langevelderseslag'>
           <div class="description">
             <p>Place: The Netherlands, Noordwijkerhout</p>
           </div>
-          <img class="portfolio-image" src='Portfolio/Images/PhotoLandscape.jpg' alt='Photo Norway'>
+          <img class="portfolio-image lozad" data-src='Images/PhotoLandscape_lowres.jpg' alt='Photo Norway'>
           <div class="description">
             <p>Place: Norway, Jotunheimen</p>
           </div>
-          <img class="portfolio-image" src='Portfolio/Images/PhotoBlossom.jpg' alt='Photo Blossom'>
+          <img class="portfolio-image lozad" data-src='Images/PhotoBlossom_lowres.jpg' alt='Photo Blossom'>
           <div class="description">
             <p>Place: The Netherlands near the Linge </p>
           </div>
-          <img class="portfolio-image" src='Portfolio/Images/PhotoNature.jpeg' alt='Photo Nature'>
+          <img class="portfolio-image lozad" data-src='Images/PhotoNature_lowres.jpg' alt='Photo Nature'>
           <div class="description">
             <p>Place: The Netherlands, de Groene Jonker</p>
           </div>
-          <img class="portfolio-image" src='Portfolio/Images/PhotoOranges.jpeg' alt='Photo Oranges Spain'>
+          <img class="portfolio-image lozad" data-src='Images/PhotoOranges_lowres.jpg' alt='Photo Oranges Spain'>
           <div class="description">
             <p>Place: Spain, Mijas</p>
           </div>
-          <img class="portfolio-image" src='Portfolio/Images/PhotoNature2.jpeg' alt='Photo Nature #2'>
+          <img class="portfolio-image lozad" data-src='Images/PhotoNature2_lowres.jpg' alt='Photo Nature #2'>
           <div class="description">
             <p>Place: The Netherlands, de Groene Jonker</p>
           </div>
           <div class="work-social-media">
           <a href="https://api.whatsapp.com/send?phone=31641344745" target="_blank">
-            <img id="home-social-whatsapp" src='Portfolio/Images/icon-whatsapp2.png' alt ='whatsapp'>
+            <img id="home-social-whatsapp" src='Images/icon-whatsapp2.png' alt ='whatsapp'>
           </a>
           <a href="https://nl.linkedin.com/in/ismay-verbeek" target="_blank">
-            <img id="home-social-linkedin" src='Portfolio/Images/icon-linkedin2.png' alt ='linkedin'>
+            <img id="home-social-linkedin" src='Images/icon-linkedin2.png' alt ='linkedin'>
           </a>
           <a href="mailto:verbeek_ismay@hotmail.com?Subject=Hello!">
-            <img id="home-social-mail" src='Portfolio/Images/icon-mail2.png' alt='mail me'>
+            <img id="home-social-mail" src='Images/icon-mail2.png' alt='mail me'>
           </a>
         </div>
         </div>
@@ -235,6 +242,6 @@
 </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-  <script src="Portfolio/main.js"></script>
+  <script src="./main.js"></script>
 </body>
 </html>
