@@ -119,7 +119,7 @@ $(document).ready(function() {
     //replace lowres background images with highres versions
     backgroundLoad();
     setTimeout(backgroundLoad, 1000);
-    setTimeout(backgroundLoad, 5000);
+    setTimeout(backgroundLoad, 10000);
 
     //lozad lazy load
     const observer = lozad();
