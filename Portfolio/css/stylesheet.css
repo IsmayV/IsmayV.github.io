@@ -49,7 +49,7 @@
 }
 
 #page-about {
-    background-image: url(https://IsmayV.github.io/Portfolio/Images/layoutLeftLQIP.jpg);
+    background-image: url(https://IsmayV.github.io/Portfolio/Images/layoutLeft.jpg);
     height: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -59,7 +59,7 @@
 }
 
 #page-work {
-    background-image: url(https://IsmayV.github.io/Portfolio/Images/layoutRightLQIP.jpg);
+    background-image: url(https://IsmayV.github.io/Portfolio/Images/layoutRight.jpg);
     height: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -108,7 +108,7 @@
 
 /*home page------------------------------------------------------------------------*/
 /*home page hero image and logo*/
-#div_hero1 {
+#hero-image1 {
   background-image: url(https://IsmayV.github.io/Portfolio/Images/Peonies-background3LQIP.jpg);
   height: 100%;
   background-repeat: no-repeat;
@@ -119,9 +119,6 @@
   display: none;
 }
 
-.img_highres {
-  display: none;
-}
 
 /*middle square center*/
 .hero-image-center {
