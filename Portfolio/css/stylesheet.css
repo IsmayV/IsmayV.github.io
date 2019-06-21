@@ -48,8 +48,8 @@
     left: 0;
 }
 
-#page-about {
-    background-image: url(https://IsmayV.github.io/Portfolio/Images/layoutLeft.jpg);
+#div_hero2 {
+    background-image: url(https://IsmayV.github.io/Portfolio/Images/layoutLeftLQIP.jpg);
     height: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -58,8 +58,8 @@
     z-index: 0;
 }
 
-#page-work {
-    background-image: url(https://IsmayV.github.io/Portfolio/Images/layoutRight.jpg);
+#div_hero3 {
+    background-image: url(https://IsmayV.github.io/Portfolio/Images/layoutRightLQIP.jpg);
     height: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -108,14 +108,18 @@
 
 /*home page------------------------------------------------------------------------*/
 /*home page hero image and logo*/
-.hero-image {
-  background-image: url(https://IsmayV.github.io/Portfolio/Images/Peonies-background3.jpg);
+#div_hero1 {
+  background-image: url(https://IsmayV.github.io/Portfolio/Images/Peonies-background3LQIP.jpg);
   height: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   position: relative;
   z-index: 0;
+  display: none;
+}
+
+.img_highres {
   display: none;
 }
 
@@ -578,13 +582,13 @@
 
 .portfolio-section {
   left: 0;
-  right: 0;
+  right: 15%;
   margin-left: auto;
   margin-right: auto;
   position: absolute;
   top: 100%;
   height: 100%;
-  width: 45%;
+  width: 65%;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 4;
   overflow: scroll;
@@ -725,13 +729,14 @@ text-align: center;
     border-right: 20px solid black;
   }
 
-  .profile-section {
-    width: 40%;
-  }
+    .profile-section {
+      left: 10%;
+      width: 60%;
+    }
 
-  .portfolio-section {
-    width: 50%;
-  }
+    .portfolio-section {
+      width: 60%;
+    }
 }
 
 
@@ -768,13 +773,14 @@ text-align: center;
     transition: all 0.5s ease;
   }
 
-  .profile-section {
-    width: 50%;
-  }
+    .profile-section {
+      left: 10%;
+      width: 60%;
+    }
 
-  .portfolio-section {
-    width: 50%;
-  }
+    .portfolio-section {
+      width: 60%;
+    }
 
   p {
     font-size: 1.8vw;
@@ -871,11 +877,12 @@ text-align: center;
   }
 
   .profile-section {
-    width: 50%;
+    left: 10%;
+    width: 60%;
   }
 
   .portfolio-section {
-    width: 50%;
+    width: 60%;
   }
 
   p {
@@ -963,6 +970,4 @@ text-align: center;
   #button-about, #button-contact {
     font-size: 3.1vw;
   }
-
-
 }
