@@ -88,7 +88,7 @@ $(document).ready(function() {
     $('.contact-section').slideUp();
     $('#button-about').addClass('selected');
     $('#button-digital').addClass('selected');
-    $('#hero-image1').fadeIn(1000);
+    $('.hero-image').fadeIn(1000);
     $('.hero-image-text, .home-social-media, .navigation-home').delay(1500).fadeIn(1000);
     $('.navigation-home').delay(300).animate({
       width: '100%',
@@ -106,11 +106,6 @@ $(document).ready(function() {
     $('#button-digital').click(toggleSectionDigital);
     $('#button-photography').click(toggleSectionPhotography);
     $('.portfolio-image').click(showDescription);
-
-    //lozad lazy load
     const observer = lozad();
     observer.observe();
-
-    //image replacer high res when loaded
-
 });
