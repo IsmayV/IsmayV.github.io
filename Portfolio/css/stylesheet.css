@@ -578,13 +578,13 @@
 
 .portfolio-section {
   left: 0;
-  right: 15%;
+  right: 0;
   margin-left: auto;
   margin-right: auto;
   position: absolute;
   top: 100%;
   height: 100%;
-  width: 65%;
+  width: 45%;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 4;
   overflow: scroll;
@@ -725,14 +725,13 @@ text-align: center;
     border-right: 20px solid black;
   }
 
-    .profile-section {
-      left: 10%;
-      width: 60%;
-    }
+  .profile-section {
+    width: 40%;
+  }
 
-    .portfolio-section {
-      width: 60%;
-    }
+  .portfolio-section {
+    width: 50%;
+  }
 }
 
 
@@ -769,14 +768,13 @@ text-align: center;
     transition: all 0.5s ease;
   }
 
-    .profile-section {
-      left: 10%;
-      width: 60%;
-    }
+  .profile-section {
+    width: 50%;
+  }
 
-    .portfolio-section {
-      width: 60%;
-    }
+  .portfolio-section {
+    width: 50%;
+  }
 
   p {
     font-size: 1.8vw;
@@ -873,12 +871,11 @@ text-align: center;
   }
 
   .profile-section {
-    left: 10%;
-    width: 60%;
+    width: 50%;
   }
 
   .portfolio-section {
-    width: 60%;
+    width: 50%;
   }
 
   p {
