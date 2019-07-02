@@ -57,27 +57,35 @@ function toggleContent2() {
 }
 
 function toggleSectionPhotography() {
-  $('#button-digital, #button-traditional').removeClass('selected');
+  $('#button-digital, #button-traditional, #button-frontend').removeClass('selected');
   $(this).addClass('selected');
   $('.portfolio-section').scrollTop(0);
-  $('.digital-section, .traditional-section').fadeOut(750);
+  $('.digital-section, .traditional-section, .frontend-section').fadeOut(750);
   $('.photography-section').delay(750).fadeIn(750); //hide about section // display contact section
 }
 
 function toggleSectionDigital() {
-  $('#button-photography, #button-traditional').removeClass('selected');
+  $('#button-photography, #button-traditional, #button-frontend').removeClass('selected');
   $(this).addClass('selected');
   $('.portfolio-section').scrollTop(0);
-  $('.photography-section, .traditional-section').fadeOut(750);
+  $('.photography-section, .traditional-section, .frontend-section').fadeOut(750);
   $('.digital-section').delay(750).fadeIn(1500); //hide about section // display contact section
 }
 
 function toggleSectionTraditional() {
-  $('#button-digital, #button-photography').removeClass('selected');
+  $('#button-digital, #button-photography, #button-frontend').removeClass('selected');
   $(this).addClass('selected');
   $('.portfolio-section').scrollTop(0);
-  $('.digital-section, .photography-section').fadeOut(750);
+  $('.digital-section, .photography-section, .frontend-section').fadeOut(750);
   $('.traditional-section').delay(750).fadeIn(750); //hide about section // display ontact section
+}
+
+function toggleSectionFrontend() {
+  $('#button-digital, #button-photography, #button-traditional').removeClass('selected');
+  $(this).addClass('selected');
+  $('.portfolio-section').scrollTop(0);
+  $('.digital-section, .photography-section, .traditional-section').fadeOut(750);
+  $('.frontend-section').delay(750).fadeIn(750); //hide about section // display ontact section
 }
 
 function showDescription() {
@@ -114,6 +122,7 @@ $(document).ready(function() {
     $('#button-traditional').click(toggleSectionTraditional);
     $('#button-digital').click(toggleSectionDigital);
     $('#button-photography').click(toggleSectionPhotography);
+    $('#button-frontend').click(toggleSectionFrontend);
     $('.portfolio-image').click(showDescription);
 
     //replace lowres background images with highres versions
