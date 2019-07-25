@@ -93,7 +93,7 @@ function showDescription() {
 }
 
 function backgroundLoad() {
-  $(".img_highres").off().on("load", function() {
+  $(".img_highres").load(function() {
      var id = $(this).attr("id");
      var highres = $(this).attr("src").toString();
      var target = "#div_" + id.substring(4);
