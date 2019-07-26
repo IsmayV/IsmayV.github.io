@@ -633,9 +633,15 @@
   object-fit: cover;
 }
 
-.rectangle-frontend {
-  width: 47% !important;
-  height: 80% !important;
+.frontend-desktop {
+  width: 64% !important;
+  height: auto !important;
+  object-fit: cover;
+}
+
+.frontend-mobile {
+  width: 32% !important;
+  height: auto !important;
   object-fit: cover;
 }
 
