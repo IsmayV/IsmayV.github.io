@@ -634,6 +634,8 @@
 }
 
 .frontend-desktop {
+  display: inline-block;
+  vertical-align: middle;
   width: 64% !important;
   height: auto !important;
   object-fit: cover;
@@ -641,6 +643,8 @@
 }
 
 .frontend-mobile {
+  display: inline-block;
+  vertical-align: middle;
   width: 32% !important;
   height: auto !important;
   object-fit: cover;
