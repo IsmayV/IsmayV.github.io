@@ -104,7 +104,7 @@ function backgroundLoad() {
 $(document).ready(function() {
     $('.contact-section').slideUp();
     $('#button-about').addClass('selected');
-    $('#button-digital').addClass('selected');
+    $('#button-frontend').addClass('selected');
     $('#div_hero1').fadeIn(1000);
     $('.hero-image-text, .home-social-media, .navigation-home').delay(1500).fadeIn(1000);
     $('.navigation-home').delay(300).animate({
