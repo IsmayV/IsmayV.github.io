@@ -608,7 +608,7 @@
   top: 0;
 }
 
-.portfolio-image {
+.portfolio-image, video {
   width: 95%;
   height: auto;
   margin: 1% auto;
