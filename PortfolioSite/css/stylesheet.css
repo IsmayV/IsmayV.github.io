@@ -261,6 +261,7 @@ hr {
 .section-carousel {
   position: relative;
   top: 20%;
+  overflow-x: hidden;
 }
 
 .carousel-item img {
@@ -526,7 +527,7 @@ hr {
   p {
     font-size: $p-size * 1.2;
   }
-  
+
 }
 
 /*# sourceMappingURL=stylesheet.css.map */

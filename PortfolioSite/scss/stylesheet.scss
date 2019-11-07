@@ -295,6 +295,7 @@ hr {
 .section-carousel {
   position: relative;
   top: 20%;
+  overflow-x: hidden; 
 }
 
 .carousel-item img {
