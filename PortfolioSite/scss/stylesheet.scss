@@ -1,0 +1,573 @@
+/*variables for colours*/
+
+$bg-color-primary: #fff;
+$bg-color-secondary: #f7dde1;
+$bg-color-tertiary: #d9808d;
+
+$text-color-light: #fff;
+$text-color-dark: #2b2b2b;
+
+/*variables for text styles*/
+
+$p-style: 'Nunito', arial, sans-serif;
+$title: 'Abril Fatface', cursive;
+$subtitle: 'Barlow Condensed', sans-serif;
+
+/*font sizes*/
+
+$p-size: 1.2vw;
+$h1-size: 8vw;
+$h2-size: $h1-size * 0.4;
+$h3-size: $p-size * 1.5;
+$h4-size: $h1-size * 0.7;
+
+
+body {
+  background-color: $bg-color-primary;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+p {
+  font-family: $p-style;
+  font-size: $p-size;
+}
+
+h1 {
+  font-family: $title;
+  font-size: $h1-size;
+}
+
+h2 {
+  font-family: $subtitle;
+  font-size: $h2-size;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: $subtitle;
+  font-size: $h3-size;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: $title;
+  font-size: $h4-size;
+  text-decoration: underline;
+}
+
+/* colours */
+
+.text-light {
+  color: $text-color-light;
+}
+
+.text-dark {
+  color: $text-color-dark;
+}
+
+.section-color {
+  background-color: $bg-color-secondary;
+}
+
+.section-white {
+  background-color: $bg-color-primary;
+}
+
+.container-fluid {
+  padding: 3% 7%;
+}
+
+/* navigation section */
+
+.navbar {
+  padding: 0;
+  position: absolute;
+  left: 2rem;
+  top: 3rem;
+  z-index: 2;
+  background-color: $bg-color-secondary;
+  border-right: 4px solid $bg-color-tertiary;
+}
+
+.nav-link {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: $text-color-dark;
+  line-height: 1.5;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(to right, $bg-color-tertiary 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position:right bottom;
+  transition: 0.5s;
+}
+
+.nav-link:hover {
+  letter-spacing: 5px;
+  background-position: -100%;
+  color: $text-color-light;
+  background-position:left bottom;
+  transition: 0.5s;
+}
+
+/* section container */
+
+#section-title .container-fluid {
+  padding: 0% 7%;
+  height: 120vh;
+}
+
+#section-portfolio .container-fluid {
+  padding: 0% 7%;
+  height: 100vh;
+}
+
+#section-about .container-fluid {
+  padding: 0% 7%;
+  height: 90vh;
+}
+
+#section-contact .container-fluid {
+  padding: 0% 7%;
+  height: 40vh;
+}
+
+/* title section*/
+
+.title-image {
+  height: 100vh;
+  width: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.header-text {
+  display: block;
+  overflow: auto;
+}
+
+.header {
+  position: relative;
+  margin: 5% 0;
+  height: 25%;
+}
+
+.header h1 {
+  position: absolute;
+  line-height: 0.8;
+  z-index: 2;
+}
+
+hr {
+  border-top: 8px solid $text-color-light;
+  position: relative;
+  z-index: 2;
+}
+
+.subtitle {
+  position: relative;
+  height: 20%;
+}
+
+.subtitle h2 {
+  position: absolute;
+  z-index: 2;
+}
+
+.text-shadow {
+  z-index: 0!important;
+  color: transparent;
+  text-shadow:
+  0px 2px 3px $bg-color-tertiary,
+  0px 4px 13px $bg-color-tertiary,
+  0px 10px 23px $bg-color-tertiary;
+}
+
+/* intro in title section */
+
+.intro {
+  background-color: $bg-color-tertiary;
+  height: 35%;
+  position: relative;
+  z-index: 2;
+}
+
+.intro-text {
+  padding: 5%;
+}
+
+.intro-logo {
+  text-align: center;
+}
+
+.intro-logo img {
+  height: 3vw;
+  width: auto;
+}
+
+.section-title {
+  position: absolute;
+  margin-top: -5%;
+  width: 43%;
+}
+
+.section-title p {
+  line-height: 1.5;
+}
+
+.title-right {
+  padding-left: 43%;
+  text-align: left;
+}
+
+/*section about*/
+
+#section-about .row-container {
+  height: 100%;
+}
+
+#section-about .row-nested {
+  background-color: #d9808d;
+  width: 60%;
+  height: 70%;
+}
+/* about image and text*/
+
+.about-image img {
+  width: 100%;
+  height: auto;
+  padding-left: 15%;
+  margin-top: -10%;
+}
+
+.about-text {
+  margin-top: -10%;
+}
+
+/* skills section in about */
+
+.skills-item {
+  color: $text-color-light;
+  text-align: center;
+}
+
+.skills-item h3 {
+  font-size: 1.2vw;
+}
+
+.skills-img {
+  color: $text-color-light;
+  font-size: 5vw;
+  margin-bottom: 0.5rem;
+}
+
+/* contact section*/
+
+.contact {
+  height: 100%;
+  width: 80%;
+}
+
+.contact-icon {
+  color: $bg-color-tertiary;
+  font-size: 4vw;
+  margin: 1.5rem;
+  transition: 0.5s;
+}
+
+.contact-icon:hover {
+  font-size: 5vw;
+  color: $bg-color-secondary;
+  transition: 0.5s;
+}
+
+.contact p {
+  color: $bg-color-tertiary;
+  line-height: 1.5;
+}
+
+/* carousel portfolio*/
+
+
+.section-carousel {
+  position: relative;
+  top: 20%;
+}
+
+.carousel-item img {
+  height: 60vh;
+  object-fit: cover;
+}
+
+
+.carousel-inner {
+  width: 140%;
+  left: -20%;
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+.carousel-inner .carousel-item-right.active,
+.carousel-inner .carousel-item-next {
+  transform: translateX(33%);
+  transition: transform 1.2s ease;
+}
+
+.carousel-inner .carousel-item-left.active,
+.carousel-inner .carousel-item-prev {
+  transform: translateX(-33%);
+  transition: transform 1.2s ease;
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{
+  transform: translateX(0);
+  transition: transform 1.2s ease;
+}
+
+.controls {
+  font-size: 3vw;
+  opacity: 1;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.carousel-control-next:hover {
+  transform: translateX(30px);
+  transition: 0.5s;
+}
+
+.carousel-control-prev:hover {
+  transform: translateX(-30px);
+  transition: 0.5s;
+}
+
+.modal-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.modal, .modal-dialog {
+  border: none;
+}
+
+.modal-header {
+  background-color: $bg-color-secondary;
+  border-bottom: none;
+}
+
+.modal-title {
+  font-family: $subtitle;
+  text-transform: uppercase;
+  color: $text-color-dark;
+}
+
+.modal-content h {
+  font-family: $p-style;
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 768px) {
+
+/* bigger font sizes */
+h1 {
+  font-size: $h1-size * 2;
+}
+
+h2 {
+  font-size: $h2-size * 2;
+}
+
+h3 {
+  font-size: $h3-size * 2;
+}
+
+h4 {
+  font-size: $h4-size * 2;
+}
+
+p {
+  font-size: $p-size * 2.2;
+}
+
+  #section-title .container-fluid {
+    padding: 0% 0%;
+    height: 115vh;
+  }
+
+  #section-portfolio .container-fluid {
+    padding: 0% 0%;
+    height: 100vh;
+  }
+
+  #section-about .container-fluid {
+    padding: 0% 0%;
+    height: 130vh;
+  }
+
+  #section-contact .container-fluid {
+    padding: 0% 0%;
+    height: 50vh;
+  }
+
+  /* navigation */
+
+  .navbar {
+    right: 2rem;
+    left: auto;
+    border-right: none;
+    border-left: 4px solid $bg-color-tertiary;
+  }
+
+  .nav-link {
+    text-align: right;
+    font-size: 3vw;
+    background: linear-gradient(to right, $bg-color-secondary 50%, $bg-color-tertiary 50%);
+    background-size: 200% 100%;
+    background-position:left bottom;
+    transition: 0.5s;
+  }
+
+  .nav-link:hover {
+    letter-spacing: 5px;
+    background-position: -100%;
+    color: $text-color-light;
+    background-position:right bottom;
+    transition: 0.5s;
+  }
+
+
+  /* title section */
+
+  .title-image {
+    height: 40vh;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    object-fit: cover;
+  }
+
+  .header, .subtitle {
+    padding: 0% 5%;
+  }
+
+  hr {
+    border-top: 4px solid $text-color-light;
+    width: 90%;
+  }
+
+  .header {
+    margin-top: -10%;
+    height: 70%;
+  }
+
+  .subtitle {
+    height: 45%;
+  }
+
+  .intro {
+    height: 110%;
+  }
+
+  .section-title {
+    padding: 0% 5%;
+    width: 100%;
+    margin-top: -8%;
+  }
+
+/* mobile controls for carousel */
+  .controls {
+    font-size: 6vw;
+  }
+
+  .carousel-control-next:hover {
+    transform: translateX(15px);
+    transition: 0.5s;
+  }
+
+  .carousel-control-prev:hover {
+    transform: translateX(-15px);
+    transition: 0.5s;
+  }
+
+  /* about section */
+
+
+  .about-image img {
+    width: 60%;
+    height: auto;
+    margin: auto;
+    margin-top: 15%;
+  }
+
+  .about-text {
+    margin: 0% 5%;
+  }
+
+  /* skills section in about */
+
+  #section-about .row-nested {
+    background-color: #d9808d;
+    width: 100%;
+    height: 140%;
+  }
+
+  .skills-item h3 {
+    font-size: 3vw;
+  }
+
+  .skills-img {
+    font-size: 12vw;
+  }
+
+  /* contact section */
+
+  .contact {
+    width: 100%;
+  }
+
+  .contact-icon {
+    color: $bg-color-tertiary;
+    font-size: 10vw;
+    margin: 1.5rem;
+    transition: 0.5s;
+  }
+
+  .contact-icon:hover {
+    font-size: 12vw;
+    color: $bg-color-secondary;
+    transition: 0.5s;
+  }
+
+}
+
+@media (max-width: 550px) {
+
+  #section-title .container-fluid {
+    height: 125vh;
+  }
+
+  #section-portfolio .container-fluid {
+    height: 110vh;
+  }
+
+  #section-about .container-fluid {
+    height: 140vh;
+  }
+
+  #section-contact .container-fluid {
+    height: 80vh;
+  }
+
+}

@@ -1,0 +1,527 @@
+/*variables for colours*/
+/*variables for text styles*/
+/*font sizes*/
+body {
+  background-color: #fff;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+p {
+  font-family: "Nunito", arial, sans-serif;
+  font-size: 1.2vw;
+}
+
+h1 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 8vw;
+}
+
+h2 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 3.2vw;
+  line-height: 0.9;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.8vw;
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 5.6vw;
+  text-decoration: underline;
+}
+
+/* colours */
+.text-light {
+  color: #fff;
+}
+
+.text-dark {
+  color: #2b2b2b;
+}
+
+.section-color {
+  background-color: #f7dde1;
+}
+
+.section-white {
+  background-color: #fff;
+}
+
+.container-fluid {
+  padding: 3% 7%;
+}
+
+/* navigation section */
+.navbar {
+  padding: 0;
+  position: absolute;
+  left: 2rem;
+  top: 3rem;
+  z-index: 2;
+  background-color: #f7dde1;
+  border-right: 4px solid #d9808d;
+}
+
+.nav-link {
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: #2b2b2b;
+  line-height: 1.5;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(to right, #d9808d 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: 0.5s;
+}
+
+.nav-link:hover {
+  letter-spacing: 5px;
+  background-position: -100%;
+  color: #fff;
+  background-position: left bottom;
+  transition: 0.5s;
+}
+
+/* section container */
+#section-title .container-fluid {
+  padding: 0% 7%;
+  height: 120vh;
+}
+
+#section-portfolio .container-fluid {
+  padding: 0% 7%;
+  height: 100vh;
+}
+
+#section-about .container-fluid {
+  padding: 0% 7%;
+  height: 90vh;
+}
+
+#section-contact .container-fluid {
+  padding: 0% 7%;
+  height: 40vh;
+}
+
+/* title section*/
+.title-image {
+  height: 100vh;
+  width: auto;
+  position: relative;
+  z-index: 1;
+}
+
+.header-text {
+  display: block;
+  overflow: auto;
+}
+
+.header {
+  position: relative;
+  margin: 5% 0;
+  height: 25%;
+}
+
+.header h1 {
+  position: absolute;
+  line-height: 0.8;
+  z-index: 2;
+}
+
+hr {
+  border-top: 8px solid #fff;
+  position: relative;
+  z-index: 2;
+}
+
+.subtitle {
+  position: relative;
+  height: 20%;
+}
+
+.subtitle h2 {
+  position: absolute;
+  z-index: 2;
+}
+
+.text-shadow {
+  z-index: 0 !important;
+  color: transparent;
+  text-shadow: 0px 2px 3px #d9808d, 0px 4px 13px #d9808d, 0px 10px 23px #d9808d;
+}
+
+/* intro in title section */
+.intro {
+  background-color: #d9808d;
+  height: 35%;
+  position: relative;
+  z-index: 2;
+}
+
+.intro-text {
+  padding: 5%;
+}
+
+.intro-logo {
+  text-align: center;
+}
+
+.intro-logo img {
+  height: 3vw;
+  width: auto;
+}
+
+.section-title {
+  position: absolute;
+  margin-top: -5%;
+  width: 43%;
+}
+
+.section-title p {
+  line-height: 1.5;
+}
+
+.title-right {
+  padding-left: 43%;
+  text-align: left;
+}
+
+/*section about*/
+#section-about .row-container {
+  height: 100%;
+}
+
+#section-about .row-nested {
+  background-color: #d9808d;
+  width: 60%;
+  height: 70%;
+}
+
+/* about image and text*/
+.about-image img {
+  width: 100%;
+  height: auto;
+  padding-left: 15%;
+  margin-top: -10%;
+}
+
+.about-text {
+  margin-top: -10%;
+}
+
+/* skills section in about */
+.skills-item {
+  color: #fff;
+  text-align: center;
+}
+
+.skills-item h3 {
+  font-size: 1.2vw;
+}
+
+.skills-img {
+  color: #fff;
+  font-size: 5vw;
+  margin-bottom: 0.5rem;
+}
+
+/* contact section*/
+.contact {
+  height: 100%;
+  width: 80%;
+}
+
+.contact-icon {
+  color: #d9808d;
+  font-size: 4vw;
+  margin: 1.5rem;
+  transition: 0.5s;
+}
+
+.contact-icon:hover {
+  font-size: 5vw;
+  color: #f7dde1;
+  transition: 0.5s;
+}
+
+.contact p {
+  color: #d9808d;
+  line-height: 1.5;
+}
+
+/* carousel portfolio*/
+.section-carousel {
+  position: relative;
+  top: 20%;
+}
+
+.carousel-item img {
+  height: 60vh;
+  object-fit: cover;
+}
+
+.carousel-inner {
+  width: 140%;
+  left: -20%;
+}
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+  display: flex;
+}
+
+.carousel-inner .carousel-item-right.active,
+.carousel-inner .carousel-item-next {
+  transform: translateX(33%);
+  transition: transform 1.2s ease;
+}
+
+.carousel-inner .carousel-item-left.active,
+.carousel-inner .carousel-item-prev {
+  transform: translateX(-33%);
+  transition: transform 1.2s ease;
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left {
+  transform: translateX(0);
+  transition: transform 1.2s ease;
+}
+
+.controls {
+  font-size: 3vw;
+  opacity: 1;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.carousel-control-next:hover {
+  transform: translateX(30px);
+  transition: 0.5s;
+}
+
+.carousel-control-prev:hover {
+  transform: translateX(-30px);
+  transition: 0.5s;
+}
+
+.modal-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.modal, .modal-dialog {
+  border: none;
+}
+
+.modal-header {
+  background-color: #f7dde1;
+  border-bottom: none;
+}
+
+.modal-title {
+  font-family: "Barlow Condensed", sans-serif;
+  text-transform: uppercase;
+  color: #2b2b2b;
+}
+
+.modal-content h {
+  font-family: "Nunito", arial, sans-serif;
+}
+
+@media (max-width: 768px) {
+  /* bigger font sizes */
+  h1 {
+    font-size: 16vw;
+  }
+
+  h2 {
+    font-size: 6.4vw;
+  }
+
+  h3 {
+    font-size: 3.6vw;
+  }
+
+  h4 {
+    font-size: 11.2vw;
+  }
+
+  p {
+    font-size: 2.64vw;
+  }
+
+  #section-title .container-fluid {
+    padding: 0% 0%;
+    height: 115vh;
+  }
+
+  #section-portfolio .container-fluid {
+    padding: 0% 0%;
+    height: 100vh;
+  }
+
+  #section-about .container-fluid {
+    padding: 0% 0%;
+    height: 130vh;
+  }
+
+  #section-contact .container-fluid {
+    padding: 0% 0%;
+    height: 50vh;
+  }
+
+  /* navigation */
+  .navbar {
+    right: 2rem;
+    left: auto;
+    border-right: none;
+    border-left: 4px solid #d9808d;
+  }
+
+  .nav-link {
+    text-align: right;
+    font-size: 3vw;
+    background: linear-gradient(to right, #f7dde1 50%, #d9808d 50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
+    transition: 0.5s;
+  }
+
+  .nav-link:hover {
+    letter-spacing: 5px;
+    background-position: -100%;
+    color: #fff;
+    background-position: right bottom;
+    transition: 0.5s;
+  }
+
+  /* title section */
+  .title-image {
+    height: 40vh;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    object-fit: cover;
+  }
+
+  .header, .subtitle {
+    padding: 0% 5%;
+  }
+
+  hr {
+    border-top: 4px solid #fff;
+    width: 90%;
+  }
+
+  .header {
+    margin-top: -10%;
+    height: 70%;
+  }
+
+  .subtitle {
+    height: 45%;
+  }
+
+  .intro {
+    height: 110%;
+  }
+
+  .section-title {
+    padding: 0% 5%;
+    width: 100%;
+    margin-top: -8%;
+  }
+
+  /* mobile controls for carousel */
+  .controls {
+    font-size: 6vw;
+  }
+
+  .carousel-control-next:hover {
+    transform: translateX(15px);
+    transition: 0.5s;
+  }
+
+  .carousel-control-prev:hover {
+    transform: translateX(-15px);
+    transition: 0.5s;
+  }
+
+  /* about section */
+  .about-image img {
+    width: 60%;
+    height: auto;
+    margin: auto;
+    margin-top: 15%;
+  }
+
+  .about-text {
+    margin: 0% 5%;
+  }
+
+  /* skills section in about */
+  #section-about .row-nested {
+    background-color: #d9808d;
+    width: 100%;
+    height: 140%;
+  }
+
+  .skills-item h3 {
+    font-size: 3vw;
+  }
+
+  .skills-img {
+    font-size: 12vw;
+  }
+
+  /* contact section */
+  .contact {
+    width: 100%;
+  }
+
+  .contact-icon {
+    color: #d9808d;
+    font-size: 10vw;
+    margin: 1.5rem;
+    transition: 0.5s;
+  }
+
+  .contact-icon:hover {
+    font-size: 12vw;
+    color: #f7dde1;
+    transition: 0.5s;
+  }
+}
+@media (max-width: 550px) {
+  #section-title .container-fluid {
+    height: 125vh;
+  }
+
+  #section-portfolio .container-fluid {
+    height: 110vh;
+  }
+
+  #section-about .container-fluid {
+    height: 140vh;
+  }
+
+  #section-contact .container-fluid {
+    height: 80vh;
+  }
+}
+
+/*# sourceMappingURL=stylesheet.css.map */

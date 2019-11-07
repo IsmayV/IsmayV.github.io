@@ -1,283 +1,264 @@
-<html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
 <head>
-  <!-- meta data  site title-->
-  <title>Ismay Verbeek | Front End Developer</title>
-  <!-- import style sheet and fonts-->
-  <link href='Portfolio/css/stylesheet.css' type='text/css' rel='stylesheet'>
-  <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600,800" rel="stylesheet">
-  <link rel="shortcut icon" type="image/png" href="Portfolio/Images/favicon.jpg" style="width:16px;height:16px;">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- title of page -->
+  <title>Ismay | Front End Developer</title>
+
+  <!-- fonts, fontAwesome, stylesheet and bootstrap-->
+  <script src="https://kit.fontawesome.com/f7d84a4a10.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Barlow+Condensed:400,600|Nunito&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="PortfolioSite/css/stylesheet.css">
+
 </head>
+
 <body>
-  <!--container for pages-->
-<div id="wrapper">
-      <!--home page-->
-    <div id="page-home" class="page">
-      <!--navigation home page-->
-      <div class="navigation-home">
-        <div class="navigation-column" id="nav-about">
-          <a class="scrollitemAbout"><h1>ABOUT</h1></a>
-        </div>
-        <div class="navigation-column" id="nav-work">
-          <a class="scrollitemWork"><h1>WORK</h1></a>
-        </div>
-      </div>
-      <!--background hero image-->
-      <div id="div_hero1">
-        <img id="img_hero1" class="img_highres" src="https://ismayverbeek.com/Portfolio/Images/Peonies-background3_lowres.jpg">
-      </div>
-      <!--social media icons-->
-      <div class="home-social-media">
-        <a href="mailto:verbeek_ismay@hotmail.com?Subject=Hello!">
-          <img id="home-social-mail" src='Portfolio/Images/icon-mail2.png' alt='mail me'>
-        </a>
-        <a href="https://nl.linkedin.com/in/ismay-verbeek" target="_blank">
-          <img id="home-social-linkedin" src='Portfolio/Images/icon-linkedin2.png' alt ='linkedin'>
-        </a>
-        <a href="https://www.instagram.com/art.of.ismay/" target="_blank">
-          <img id="home-social-instagram" src='Portfolio/Images/icon-instagram2.png' alt='instagram'>
-        </a>
-      </div>
-      <!--centered square with logo-->
-      <div class="hero-image-center">
-        <div class="hero-image-logo">
-          <img src="./Portfolio/Images/Logo.png"></img>
-        </div>
-      </div>
-      <div class="hero-image-text">
-        <h1>ISMAY VERBEEK</h1>
-        <h2>FRONT END DEVELOPER</h2>
-      </div>
+
+  <!-- navigation-->
+
+  <nav class="navbar navbar-expand-lg">
+
+    <!-- navigation button collapse -->
+    <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navToggle">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- navigation items -->
+
+    <div class="collapse navbar-collapse" id="navToggle">
+      <ul class="navbar-nav flex-column mr-left">
+        <li class="nav-item">
+          <a class="nav-link" href="#section-portfolio" data-text="portfolio">portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section-about">about</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section-contact">contact</a>
+        </li>
+      </ul>
     </div>
 
+  </nav>
 
+  <!-- header section image, title and subtitle -->
 
-    <!--about page-->
-    <div id="div_hero2" class="page nodisplay">
-      <img id="img_hero2" class="img_highres" src="https://ismayverbeek.com/Portfolio/Images/layoutLeft_lowres.jpg">
-      <div class="navigation-about">
-        <div class="navigation-column" id="nav-home1">
-          <a class="scrollitemHome1"><h1>HOME</h1></a>
+  <div class="section-color" id="section-title">
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <img class="title-image" src="PortfolioSite/images/opening-image.jpg" alt="opening image">
+        </div>
+
+        <div class="col-md-6 col-sm-12">
+          <div class="header text-light">
+            <h1>Ismay Verbeek</h1>
+            <h1 class="text-shadow">Ismay Verbeek</h1>
+          </div>
+          <hr>
+          <div class="subtitle text-light">
+            <h2>Creative front end developer & designer</h2>
+            <h2 class="text-shadow">Creative front end developer & designer</h2>
+          </div>
+          <div class="intro">
+            <div class="intro-text text-light">
+              <h3>Hi, I am Ismay.</h3>
+              <p>I am a creative front end developer and designer. I have a sixth sense for design backed by technical skills.
+                I am passionate about creating aesthetic digital products with natural interactions and a pleasant experience for users.
+                Scroll further to see my work!
+              </p>
+              <div class="intro-logo">
+                <img src="PortfolioSite/images/logoIV.png" alt="logo">
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="about-sections">
-          <h2 id="button-about">About Me</h2>
-          <h2 id="button-contact">Contact</h2>
-      </div>
-      <div class="profile-section">
-<!--about section --------------------------------------------------------->
-        <div class="about-section">
-          <img id="profile-image" src='Portfolio/Images/profile-image.jpg' alt='me'>
-          <h2>About me</h2>
-          <p>Hi there stranger on the internet! Thank you for taking a moment to visit my website. I am Ismay and
-          I am a Front End Developer. I love making esthetic and unique digital products, focused on user experience
-         and responsiveness. Besides making digital experiences I am also a passionate painter and
-       ice cream maker. </p>
-        </div>
-<!--contact section and form------------------------------------------------->
 
-        <div class="contact-section">
-          <h2>Get in Touch</h2>
-          <p>If you have any questions regarding my work or if you are a future client, don't hesitate to send me a message!
-          I will try to answer it as soon as I can.</p>
-        </br>
-        <p>Simply give me a message on whatsapp, linkedin or send me an e-mail with one of the buttons below</p>
-          <div class="about-social-media">
-          <a href="https://api.whatsapp.com/send?phone=31641344745" target="_blank">
-            <img id="home-social-whatsapp" src='Portfolio/Images/icon-whatsapp2_lowres.png' alt ='whatsapp'>
-          </a>
-          <a href="https://nl.linkedin.com/in/ismay-verbeek" target="_blank">
-            <img id="home-social-linkedin" src='Portfolio/Images/icon-linkedin2_lowres.png' alt ='linkedin'>
-          </a>
-          <a href="mailto:verbeek_ismay@hotmail.com?Subject=Hello!">
-            <img id="home-social-mail" src='Portfolio/Images/icon-mail2_lowres.png' alt='mail me'>
-          </a>
+    </div>
+  </div>
+
+
+  <div class="section-white" id="section-portfolio">
+    <div class="container-fluid">
+      <div class="section-title">
+        <h4>Portfolio</h4>
+        <p>I define myself as a front end developer but I also love to make illustrations and designs.
+          Feel free to enjoy my work here, which consists of front end work, digital illustrations, 3D environments and also gouache paintings. </p>
+      </div>
+
+      <!-- carousel-->
+      <div class="section-carousel">
+        <div class="row mx-auto my-auto">
+          <div id="carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block col-4" src="PortfolioSite/images/front-end-icecreamDesktop.gif" alt="Front end" data-toggle="modal" data-target="#exampleModal" data-title="Front End: Icecream Shop (desktop)" data-tools="HTML5, CSS3, Javascript, JQuery" data-img="Portfolio/images/front-end-icecreamDesktop.gif">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block col-4" src="PortfolioSite/images/front-end-TinDog.gif" alt="Front end" data-toggle="modal" data-target="#exampleModal" data-title="Front End: TinDog"  data-tools="HTML5, CSS3, Bootstrap">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block col-4" src="PortfolioSite/images/front-end-portfolio.gif" alt="Front end" data-toggle="modal" data-target="#exampleModal" data-title="Front End: Portfolio Site"  data-tools="HTML5, CSS3, Javascript, JQuery">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block col-4" src="PortfolioSite/images/front-end-TeaCozy.gif" alt="Front end" data-toggle="modal" data-target="#exampleModal" data-title="Front End: Tea Cozy" data-tools="HTML5, CSS3">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block col-4" src="PortfolioSite/images/illustration-forest.png" alt="Illustration" data-toggle="modal" data-target="#exampleModal" data-title="Illustration: Forest" data-tools="Photoshop">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block col-4" src="PortfolioSite/images/illustration-birds.jpg" alt="Illustration" data-toggle="modal" data-target="#exampleModal" data-title="Illustration: Birds"  data-tools="Photoshop">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block col-4" src="PortfolioSite/images/3d-arora.jpg" alt="3D Environment" data-toggle="modal" data-target="#exampleModal" data-title="3D Environment: Arora" data-tools="Unreal Engine, Autodesk Maya, Photoshop">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block col-4" src="PortfolioSite/images/illustration-winter.jpg" alt="Illustration" data-toggle="modal" data-target="#exampleModal" data-title="Illustration: Winter" data-tools="Photoshop">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block col-4" src="PortfolioSite/images/illustration-forest.png" alt="Illustration" data-toggle="modal" data-target="#exampleModal" data-title="Illustration: Forest" data-tools="Photoshop">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+              <i class="controls fas fa-caret-square-left"></i>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+              <i class="controls fas fa-caret-square-right"></i>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
         </div>
-        <p>Or just give me a call: +31 6 41344745</p>
-        </div>
+
+      </div>
+
+      <!-- modal for carousel -->
+
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+
+        <!-- modal title-->
+
+        <h5 class="modal-title" id="exampleModalLabel">title modal</h5>
+
+        <!-- close button-->
+
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <!-- modal content -->
+
+      <div class="modal-body">
+        <img class="modal-img" id="exampleModalLabel" src="PortfolioSite/images/illustration-winter.jpg">
+        <p class="modal-tools" id="exampleModalLabel"><strong>Tools used: </strong></p>
       </div>
     </div>
-
-
-
-    <!--work page-->
-    <div id="div_hero3" class="page nodisplay">
-      <img id="img_hero3" class="img_highres" src="https://ismayverbeek.com/Portfolio/Images/layoutRight_lowres.jpg">
-      <div class="navigation-work">
-        <div class="navigation-column" id="nav-home2">
-          <a class="scrollitemHome2"><h1>HOME</h1></a>
-        </div>
-      </div>
-      <div class="work-sections">
-          <h2 id="button-frontend">Front End</h2>
-          <h2 id="button-digital">Digital</h2>
-          <h2 id="button-traditional">Traditional</h2>
-          <h2 id="button-photography">Photography</h2>
-      </div>
-      <div class="portfolio-section">
-        <!--front end section -->
-                <div class="frontend-section">
-                  <video controls autoplay>
-                    <source src="./Portfolio/Images/IceCreamShop.mp4" type="video/mp4">
-                    <source src="movie.ogg" type="video/ogg">
-                      Your browser does not support the video tag.
-                  </video>
-                  <div class="description">
-                    <p>Ice Cream Shop Desktop</p>
-                  </div>
-                  <img class="portfolio-image frontend-mobile lozad" data-src='./Portfolio/Images/IceCreamShopMobileGIF.gif' alt='Ice Cream Shop Mobile'>
-                  <div class="description">
-                    <p>Ice Cream Shop Mobile</p>
-                  </div>
-                  <video controls autoplay>
-                    <source src="./Portfolio/Images/TeaCozy.mp4" type="video/mp4">
-                    <source src="movie.ogg" type="video/ogg">
-                      Your browser does not support the video tag.
-                  </video>
-                  <div class="description">
-                    <p>Ice Cream Shop Desktop</p>
-                  </div>
-                  <div class="work-social-media">
-                  <a href="https://api.whatsapp.com/send?phone=31641344745" target="_blank">
-                    <img id="home-social-whatsapp" src='Portfolio/Images/icon-whatsapp2_lowres.png' alt ='whatsapp'>
-                  </a>
-                  <a href="https://nl.linkedin.com/in/ismay-verbeek" target="_blank">
-                    <img id="home-social-linkedin" src='Portfolio/Images/icon-linkedin2_lowres.png' alt ='linkedin'>
-                  </a>
-                  <a href="mailto:verbeek_ismay@hotmail.com?Subject=Hello!">
-                    <img id="home-social-mail" src='Portfolio/Images/icon-mail2_lowres.png' alt='mail me'>
-                  </a>
-                </div>
-                </div>
-
-        <!--digital section --------------------------------------------------------->
-                <div class="digital-section nodisplay">
-                  <img class="portfolio-image lozad" data-src='./Portfolio/Images/DigitalConcept_lowres.jpg' alt='Digital Concept'>
-                  <div class="description">
-                    <p>Environmental Concept Colour Sketch</p>
-                  </div>
-                  <img class="portfolio-image lozad" data-src='Portfolio/Images/DigitalConcept3_lowres.jpg' alt='Digital Concept #2'>
-                  <div class="description">
-                    <p>Environmental Concept Colour Sketch</p>
-                  </div>
-                  <img class="portfolio-image rectangle lozad" data-src='Portfolio/Images/DigitalIllustration_lowres.jpg' alt='Digital Illustration'>
-                  <div class="description rectangle left">
-                    <p>Poster Illustration <br> Subject: New Zealand Fauna & Flora</p>
-                  </div>
-                  <img class="portfolio-image rectangle lozad" data-src='Portfolio/Images/DigitalStudy_lowres.jpg' alt='Digital Study Anatomy'>
-                  <div class="description rectangle right">
-                    <p>Anatomy Study <br> Subject: The Abduction of Proserpina</p>
-                  </div>
-                  <img class="portfolio-image lozad" data-src='Portfolio/Images/DigitalConcept2_lowres.jpg' alt='Digital Concept'>
-                  <div class="description">
-                    <p>Environmental Concept Colour Sketch</p>
-                  </div>
-                  <img class="portfolio-image lozad" data-src='Portfolio/Images/Digital3D_lowres.jpg' alt='3D environment'>
-                  <div class="description">
-                    <p>3D Environment in Unreal Engine</p>
-                  </div>
-                  <img class="portfolio-image lozad" data-src='Portfolio/Images/DigitalSketch_lowres.jpg' alt='Digital Sketch'>
-                  <div class="description">
-                    <p>Environmental Sketch</p>
-                  </div>
-                  <div class="work-social-media">
-                  <a href="https://api.whatsapp.com/send?phone=31641344745" target="_blank">
-                    <img id="home-social-whatsapp" src='Portfolio/Images/icon-whatsapp2_lowres.png' alt ='whatsapp'>
-                  </a>
-                  <a href="https://nl.linkedin.com/in/ismay-verbeek" target="_blank">
-                    <img id="home-social-linkedin" src='Portfolio/Images/icon-linkedin2_lowres.png' alt ='linkedin'>
-                  </a>
-                  <a href="mailto:verbeek_ismay@hotmail.com?Subject=Hello!">
-                    <img id="home-social-mail" src='Portfolio/Images/icon-mail2_lowres.png' alt='mail me'>
-                  </a>
-                </div>
-                </div>
-<!--traditional section --------------------------------------------------------->
-
-        <div class="traditional-section nodisplay">
-          <img class="portfolio-image lozad" data-src="Portfolio/Images/TraditionalRosebottle_lowres.jpg">
-          <div class="description">
-            <p>Materials: Gouache & Ink</p>
-          </div>
-          <img class="portfolio-image rectangle lozad" data-src="Portfolio/Images/TraditionalRose_lowres.jpg">
-          <div class="description rectangle left">
-            <p>Materials: Watercolour & Ink</p>
-          </div>
-          <img class="portfolio-image rectangle lozad" data-src="Portfolio/Images/TraditionalMagical_lowres.jpg">
-          <div class="description rectangle right">
-            <p>Materials: Acryl Paint</p>
-          </div>
-          <img class="portfolio-image lozad" data-src="Portfolio/Images/TraditionalNorway_lowres.jpg">
-          <div class="description">
-            <p>Materials: Oil Paint</p>
-          </div>
-          <img class="portfolio-image rectangle lozad" data-src="Portfolio/Images/TraditionalNewZealand_lowres.jpg">
-          <div class="description left">
-            <p>Materials: Oil Paint</p>
-          </div>
-          <img class="portfolio-image rectangle lozad" data-src="Portfolio/Images/TraditionalInk_lowres.jpg">
-          <div class="description right">
-            <p>Materials: Ink</p>
-          </div>
-          <img class="portfolio-image lozad" data-src="Portfolio/Images/TraditionalStudy_lowres.jpg">
-          <div class="description">
-            <p>Materials: Acryl Paint</p>
-          </div>
-          <div class="work-social-media">
-          <a href="https://api.whatsapp.com/send?phone=31641344745" target="_blank">
-            <img id="home-social-whatsapp" src='Portfolio/Images/icon-whatsapp2_lowres.png' alt ='whatsapp'>
-          </a>
-          <a href="https://nl.linkedin.com/in/ismay-verbeek" target="_blank">
-            <img id="home-social-linkedin" src='Portfolio/Images/icon-linkedin2_lowres.png' alt ='linkedin'>
-          </a>
-          <a href="mailto:verbeek_ismay@hotmail.com?Subject=Hello!">
-            <img id="home-social-mail" src='Portfolio/Images/icon-mail2_lowres.png' alt='mail me'>
-          </a>
-        </div>
-        </div>
-<!--photography section --------------------------------------------------------->
-        <div class="photography-section nodisplay">
-          <img class="portfolio-image lozad" data-src='Portfolio/Images/PhotoSea_lowres.jpg' alt='Photo Langevelderseslag'>
-          <div class="description">
-            <p>Place: The Netherlands, Noordwijkerhout</p>
-          </div>
-          <img class="portfolio-image lozad" data-src='Portfolio/Images/PhotoLandscape_lowres.jpg' alt='Photo Norway'>
-          <div class="description">
-            <p>Place: Norway, Jotunheimen</p>
-          </div>
-          <img class="portfolio-image lozad" data-src='Portfolio/Images/PhotoBlossom_lowres.jpg' alt='Photo Blossom'>
-          <div class="description">
-            <p>Place: The Netherlands near the Linge </p>
-          </div>
-          <img class="portfolio-image lozad" data-src='Portfolio/Images/PhotoNature_lowres.jpg' alt='Photo Nature'>
-          <div class="description">
-            <p>Place: The Netherlands, de Groene Jonker</p>
-          </div>
-          <img class="portfolio-image lozad" data-src='Portfolio/Images/PhotoOranges_lowres.jpg' alt='Photo Oranges Spain'>
-          <div class="description">
-            <p>Place: Spain, Mijas</p>
-          </div>
-          <img class="portfolio-image lozad" data-src='Portfolio/Images/PhotoNature2_lowres.jpg' alt='Photo Nature #2'>
-          <div class="description">
-            <p>Place: The Netherlands, de Groene Jonker</p>
-          </div>
-          <div class="work-social-media">
-          <a href="https://api.whatsapp.com/send?phone=31641344745" target="_blank">
-            <img id="home-social-whatsapp" src='Portfolio/Images/icon-whatsapp2_lowres.png' alt ='whatsapp'>
-          </a>
-          <a href="https://nl.linkedin.com/in/ismay-verbeek" target="_blank">
-            <img id="home-social-linkedin" src='Portfolio/Images/icon-linkedin2_lowres.png' alt ='linkedin'>
-          </a>
-          <a href="mailto:verbeek_ismay@hotmail.com?Subject=Hello!">
-            <img id="home-social-mail" src='Portfolio/Images/icon-mail2_lowres.png' alt='mail me'>
-          </a>
-        </div>
-        </div>
-      </div>
-    </div>
+  </div>
 </div>
-  <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-  <script src="./Portfolio/main.js"></script>
+
+    </div>
+  </div>
+
+
+  <div class="section-color" id="section-about">
+    <div class="container-fluid">
+      <div class="row row-container">
+
+        <!-- left side navigation-->
+
+        <div class="col-md-6 col-sm-12 d-flex align-content-center flex-wrap">
+          <div class="row row-nested align-items-center mx-auto">
+
+            <div class="col-6 skills-item">
+              <i class="fas fa-file-code skills-img"></i>
+              <h3>CSS/HTML</h3>
+            </div>
+            <div class="col-6 skills-item">
+              <i class="fab fa-js-square skills-img"></i>
+              <h3>JavaScript</h3>
+            </div>
+            <div class="col-6 skills-item">
+              <i class="fab fa-adobe skills-img"></i>
+              <h3>Photoshop</h3>
+            </div>
+            <div class="col-6 skills-item">
+              <i class="fas fa-palette skills-img"></i>
+              <h3>Illustration</h3>
+            </div>
+            <div class="col-6 skills-item">
+              <i class="fab fa-bootstrap skills-img"></i>
+              <h3>Bootstrap</h3>
+            </div>
+            <div class="col-6 skills-item">
+              <i class="fab fa-react skills-img"></i>
+              <h3>React</h3>
+            </div>
+
+          </div>
+        </div>
+
+        <!--right side about-->
+
+        <div class="col-md-6 col-sm-12 about-image">
+          <img src="PortfolioSite/images/about-image.jpg" alt="about image">
+          <div class="about-text">
+            <h4>About</h4>
+            <p>I graduated in a Bachelor of Science: Game Art at the Academy of the Arts Utrecht.
+              I love to make beautiful designs and to translate these into code. My focus is
+              natural interactions and a pleasant user experience but keeping well thought-out design and function.
+              Besides coding and illustrating, I love to be in nature which is one of my biggest inspirations.
+              I am currently located in Auckland, New Zealand.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <div class="section-white" id="section-contact">
+    <div class="container-fluid">
+      <div class="section-title">
+        <h4>Contact</h4>
+      </div>
+      <div class="row contact align-items-center mx-auto">
+        <div class="col-md-4 col-sm-6 text-center">
+          <i class="contact-icon fas fa-globe-asia"></i>
+          <p>Auckland, New Zealand</p>
+        </div>
+        <div class="col-md-4 col-sm-6 text-center">
+          <a href="https://api.whatsapp.com/send?phone=31641344745">
+            <i class="contact-icon fas fa-phone"></i>
+          </a>
+          <p>+64 21 08797587</p>
+        </div>
+        <div class="col-md-4 col-sm-6 text-center">
+          <a href="mailto:verbeek_ismay@hotmail.com?Subject=Hello!">
+            <i class="contact-icon fas fa-envelope"></i>
+          </a>
+          <p>verbeek_ismay@hotmail.com</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- scripts, jquery, popper.js and bootstrap -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="PortfolioSite/JavaScript/main.js"></script>
 </body>
+
 </html>
