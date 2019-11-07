@@ -555,7 +555,7 @@ p {
 @media (max-width: 550px) {
 
   #section-title .container-fluid {
-    height: 125vh;
+    height: 110vh;
   }
 
   #section-portfolio .container-fluid {
@@ -563,11 +563,15 @@ p {
   }
 
   #section-about .container-fluid {
-    height: 140vh;
+    height: 120vh;
   }
 
   #section-contact .container-fluid {
-    height: 80vh;
+    height: 60vh;
+  }
+
+  p {
+    font-size: $p-size * 1.2;
   }
 
 }
