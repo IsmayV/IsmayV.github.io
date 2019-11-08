@@ -79,6 +79,53 @@ h4 {
   padding: 3% 7%;
 }
 
+/* animations on scroll*/
+
+.scroll-item {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.scroll-item.animate {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: 1.5s;
+ -webkit-transition: 1.5s;
+ -o-transition: 1.5s;
+ -moz-transition: 1.5s;
+  transition-delay: 0.3s;
+}
+
+.scroll-img-left {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.scroll-img-left.slide-in-left {
+  opacity: 1;
+  transform: translate(0px);
+  transition: 2.5s;
+ -webkit-transition: 2.5s;
+ -o-transition: 2.5s;
+ -moz-transition: 2.5s;
+  transition-delay: 1s;
+}
+
+.scroll-img-right {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.scroll-img-right.slide-in-right {
+  opacity: 1;
+  transform: translate(0px);
+  transition: 2s;
+ -webkit-transition: 2s;
+ -o-transition: 2s;
+ -moz-transition: 2s;
+  transition-delay: 1s;
+}
+
 /* navigation section */
 
 .navbar {
@@ -295,7 +342,7 @@ hr {
 .section-carousel {
   position: relative;
   top: 20%;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 .carousel-item img {

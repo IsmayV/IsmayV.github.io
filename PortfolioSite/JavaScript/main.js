@@ -1,5 +1,86 @@
 $(document).ready(function() {
 
+  const scrollItem = '.scroll-item';
+  const animateClass = 'animate';
+
+  const scrollImgLeft = '.scroll-img-left';
+  const slideLeftClass = 'slide-in-left';
+
+  const scrollImgRight = '.scroll-img-right';
+  const slideRightClass = 'slide-in-right';
+
+
+  const animate = element => (
+    element.classList.add(animateClass)
+  );
+
+  const isAnimated = element => (
+    element.classList.contains(animateClass)
+  );
+
+  const slideLeft = element => (
+    element.classList.add(slideLeftClass)
+  );
+
+  const isSlidedLeft = element => (
+    element.classList.contains(slideLeftClass)
+  );
+
+  const slideRight = element => (
+    element.classList.add(slideRightClass)
+  );
+
+  const isSlidedRight = element => (
+    element.classList.contains(slideRightClass)
+  );
+
+  const intersectionObserver = new IntersectionObserver((entries, observer) => {
+    entries.forEach((entry) => {
+
+      // when element's is in viewport,
+      // animate it!
+      if (entry.intersectionRatio > 0) {
+        animate(entry.target);
+        observer.unobserve(entry.target);
+      }
+
+      if (entry.intersectionRatio > 0) {
+        slideLeft(entry.target);
+        observer.unobserve(entry.target);
+      }
+
+      if (entry.intersectionRatio > 0) {
+        slideRight(entry.target);
+        observer.unobserve(entry.target);
+      }
+
+      // remove observer after animation
+    });
+  });
+
+  // get only these elements,
+  // which are not animated yet
+  const elementsItems = [].filter.call(
+    document.querySelectorAll(scrollItem),
+    element => !isAnimated(element, animateClass),
+  );
+
+  const elementsImgsLeft = [].filter.call(
+    document.querySelectorAll(scrollImgLeft),
+    element => !isSlidedLeft(element, slideLeftClass),
+  );
+
+  const elementsImgsRight = [].filter.call(
+    document.querySelectorAll(scrollImgRight),
+    element => !isSlidedRight(element, slideRightClass),
+  );
+
+  // start observing your elements
+  elementsItems.forEach((element) => intersectionObserver.observe(element));
+  elementsImgsLeft.forEach((element) => intersectionObserver.observe(element));
+  elementsImgsRight.forEach((element) => intersectionObserver.observe(element));
+// carousel
+
   $('#carousel').carousel({
     interval: 10000
   })
