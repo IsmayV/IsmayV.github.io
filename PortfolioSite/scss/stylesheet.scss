@@ -469,6 +469,22 @@ p {
     height: 50vh;
   }
 
+
+  .scroll-img-left {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+
+  .scroll-img-left.slide-in-left {
+    opacity: 1;
+    transform: translate(0px);
+    transition: 0s;
+   -webkit-transition: 0s;
+   -o-transition: 0s;
+   -moz-transition: 0s;
+    transition-delay: 0s;
+  }
+
   /* navigation */
 
   .navbar {
