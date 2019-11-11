@@ -57,55 +57,7 @@ h4 {
   padding: 3% 7%;
 }
 
-/* animations on scroll*/
-
-.scroll-item {
-  opacity: 0;
-  transform: translateY(40px);
-}
-
-.scroll-item.animate {
-  opacity: 1;
-  transform: translateY(0px);
-  transition: 1.5s;
- -webkit-transition: 1.5s;
- -o-transition: 1.5s;
- -moz-transition: 1.5s;
-  transition-delay: 0.3s;
-}
-
-.scroll-img-left {
-  opacity: 0;
-  transform: translateX(-100%);
-}
-
-.scroll-img-left.slide-in-left {
-  opacity: 1;
-  transform: translate(0px);
-  transition: 2.5s;
- -webkit-transition: 2.5s;
- -o-transition: 2.5s;
- -moz-transition: 2.5s;
-  transition-delay: 1s;
-}
-
-.scroll-img-right {
-  opacity: 0;
-  transform: translateX(100%);
-}
-
-.scroll-img-right.slide-in-right {
-  opacity: 1;
-  transform: translate(0px);
-  transition: 2s;
- -webkit-transition: 2s;
- -o-transition: 2s;
- -moz-transition: 2s;
-  transition-delay: 1s;
-}
-
 /* navigation section */
-
 .navbar {
   padding: 0;
   position: absolute;
@@ -131,7 +83,7 @@ h4 {
 }
 
 .nav-link:hover {
-  letter-spacing: 5px;
+  letter-spacing: 8px;
   background-position: -100%;
   color: #fff;
   background-position: left bottom;
@@ -157,6 +109,52 @@ h4 {
 #section-contact .container-fluid {
   padding: 0% 7%;
   height: 40vh;
+}
+
+/* animations on scroll*/
+.scroll-item {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.scroll-item.animate {
+  opacity: 1;
+  transform: translateY(0px);
+  transition: 1.5s;
+  -webkit-transition: 1.5s;
+  -o-transition: 1.5s;
+  -moz-transition: 1.5s;
+  transition-delay: 0.3s;
+}
+
+.scroll-img-left {
+  opacity: 0;
+  transform: translateX(-100%);
+}
+
+.scroll-img-left.slide-in-left {
+  opacity: 1;
+  transform: translate(0px);
+  transition: 2.5s;
+  -webkit-transition: 2.5s;
+  -o-transition: 2.5s;
+  -moz-transition: 2.5s;
+  transition-delay: 1s;
+}
+
+.scroll-img-right {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.scroll-img-right.slide-in-right {
+  opacity: 1;
+  transform: translate(0px);
+  transition: 2s;
+  -webkit-transition: 2s;
+  -o-transition: 2s;
+  -moz-transition: 2s;
+  transition-delay: 1s;
 }
 
 /* title section*/
@@ -271,14 +269,21 @@ hr {
   text-align: center;
 }
 
+.skills-item:hover h3, .skills-item:hover .skills-img {
+  color: #2b2b2b;
+  transition: 0.5s;
+}
+
 .skills-item h3 {
   font-size: 1.2vw;
+  transition: 0.5s;
 }
 
 .skills-img {
   color: #fff;
   font-size: 5vw;
   margin-bottom: 0.5rem;
+  transition: 0.5s;
 }
 
 /* contact section*/
@@ -309,12 +314,21 @@ hr {
 .section-carousel {
   position: relative;
   top: 20%;
-  overflow-x: hidden;
 }
 
 .carousel-item img {
   height: 60vh;
   object-fit: cover;
+  transform: scale3d(0.9, 0.9, 0.9);
+  opacity: 0.8;
+  transition: 0.5s;
+}
+
+.carousel-item img:hover {
+  cursor: pointer;
+  transform: scale3d(1, 1, 1);
+  opacity: 1;
+  transition: 0.5s;
 }
 
 .carousel-inner {
@@ -433,21 +447,21 @@ hr {
     height: 50vh;
   }
 
+  /* disable animation*/
+  .scroll-img-left {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 
-    .scroll-img-left {
-      opacity: 1;
-      transform: translateX(0px);
-    }
-
-    .scroll-img-left.slide-in-left {
-      opacity: 1;
-      transform: translate(0px);
-      transition: 0s;
-     -webkit-transition: 0s;
-     -o-transition: 0s;
-     -moz-transition: 0s;
-      transition-delay: 0s;
-    }
+  .scroll-img-left.slide-in-left {
+    opacity: 1;
+    transform: translate(0px);
+    transition: 0s;
+    -webkit-transition: 0s;
+    -o-transition: 0s;
+    -moz-transition: 0s;
+    transition-delay: 0s;
+  }
 
   /* navigation */
   .navbar {
@@ -571,7 +585,7 @@ hr {
     transition: 0.5s;
   }
 }
-@media (max-width: 550px) {
+@media (max-width: 480px) {
   #section-title .container-fluid {
     height: 110vh;
   }
@@ -581,17 +595,20 @@ hr {
   }
 
   #section-about .container-fluid {
-    height: 120vh;
+    height: 110vh;
   }
 
   #section-contact .container-fluid {
-    height: 60vh;
+    height: 90vh;
+  }
+
+  #section-about .row-nested {
+    height: 130%;
   }
 
   p {
-    font-size: $p-size * 1.2;
+    font-size: 1.44vw;
   }
-
 }
 
 /*# sourceMappingURL=stylesheet.css.map */

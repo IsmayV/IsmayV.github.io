@@ -79,6 +79,62 @@ h4 {
   padding: 3% 7%;
 }
 
+/* navigation section */
+
+.navbar {
+  padding: 0;
+  position: absolute;
+  left: 2rem;
+  top: 3rem;
+  z-index: 2;
+  background-color: $bg-color-secondary;
+  border-right: 4px solid $bg-color-tertiary;
+}
+
+.nav-link {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.5vw;
+  font-weight: bold;
+  color: $text-color-dark;
+  line-height: 1.5;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(to right, $bg-color-tertiary 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position:right bottom;
+  transition: 0.5s;
+}
+
+.nav-link:hover {
+  letter-spacing: 8px;
+  background-position: -100%;
+  color: $text-color-light;
+  background-position:left bottom;
+  transition: 0.5s;
+}
+
+/* section container */
+
+#section-title .container-fluid {
+  padding: 0% 7%;
+  height: 120vh;
+}
+
+#section-portfolio .container-fluid {
+  padding: 0% 7%;
+  height: 100vh;
+}
+
+#section-about .container-fluid {
+  padding: 0% 7%;
+  height: 90vh;
+}
+
+#section-contact .container-fluid {
+  padding: 0% 7%;
+  height: 40vh;
+}
+
 /* animations on scroll*/
 
 .scroll-item {
@@ -124,62 +180,6 @@ h4 {
  -o-transition: 2s;
  -moz-transition: 2s;
   transition-delay: 1s;
-}
-
-/* navigation section */
-
-.navbar {
-  padding: 0;
-  position: absolute;
-  left: 2rem;
-  top: 3rem;
-  z-index: 2;
-  background-color: $bg-color-secondary;
-  border-right: 4px solid $bg-color-tertiary;
-}
-
-.nav-link {
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 1.5vw;
-  font-weight: bold;
-  color: $text-color-dark;
-  line-height: 1.5;
-  text-transform: uppercase;
-  padding: 0.5rem 1rem;
-  background: linear-gradient(to right, $bg-color-tertiary 50%, transparent 50%);
-  background-size: 200% 100%;
-  background-position:right bottom;
-  transition: 0.5s;
-}
-
-.nav-link:hover {
-  letter-spacing: 5px;
-  background-position: -100%;
-  color: $text-color-light;
-  background-position:left bottom;
-  transition: 0.5s;
-}
-
-/* section container */
-
-#section-title .container-fluid {
-  padding: 0% 7%;
-  height: 120vh;
-}
-
-#section-portfolio .container-fluid {
-  padding: 0% 7%;
-  height: 100vh;
-}
-
-#section-about .container-fluid {
-  padding: 0% 7%;
-  height: 90vh;
-}
-
-#section-contact .container-fluid {
-  padding: 0% 7%;
-  height: 40vh;
 }
 
 /* title section*/
@@ -301,14 +301,21 @@ hr {
   text-align: center;
 }
 
+.skills-item:hover h3, .skills-item:hover .skills-img  {
+  color: $text-color-dark;
+  transition: 0.5s;
+}
+
 .skills-item h3 {
   font-size: 1.2vw;
+  transition: 0.5s;
 }
 
 .skills-img {
   color: $text-color-light;
   font-size: 5vw;
   margin-bottom: 0.5rem;
+  transition: 0.5s;
 }
 
 /* contact section*/
@@ -342,14 +349,22 @@ hr {
 .section-carousel {
   position: relative;
   top: 20%;
-  overflow-x: hidden;
 }
 
 .carousel-item img {
   height: 60vh;
   object-fit: cover;
+  transform: scale3d(0.9, 0.9, 0.9);
+  opacity: 0.8;
+  transition: 0.5s;
 }
 
+.carousel-item img:hover {
+  cursor: pointer;
+  transform: scale3d(1, 1, 1);
+  opacity: 1;
+  transition: 0.5s;
+}
 
 .carousel-inner {
   width: 140%;
@@ -469,21 +484,22 @@ p {
     height: 50vh;
   }
 
+/* disable animation*/
 
-  .scroll-img-left {
-    opacity: 1;
-    transform: translateX(0px);
-  }
+    .scroll-img-left {
+      opacity: 1;
+      transform: translateX(0px);
+    }
 
-  .scroll-img-left.slide-in-left {
-    opacity: 1;
-    transform: translate(0px);
-    transition: 0s;
-   -webkit-transition: 0s;
-   -o-transition: 0s;
-   -moz-transition: 0s;
-    transition-delay: 0s;
-  }
+    .scroll-img-left.slide-in-left {
+      opacity: 1;
+      transform: translate(0px);
+      transition: 0s;
+     -webkit-transition: 0s;
+     -o-transition: 0s;
+     -moz-transition: 0s;
+      transition-delay: 0s;
+    }
 
   /* navigation */
 
@@ -616,7 +632,7 @@ p {
 
 }
 
-@media (max-width: 550px) {
+@media (max-width: 480px) {
 
   #section-title .container-fluid {
     height: 110vh;
@@ -627,11 +643,15 @@ p {
   }
 
   #section-about .container-fluid {
-    height: 120vh;
+    height: 110vh;
   }
 
   #section-contact .container-fluid {
-    height: 60vh;
+    height: 90vh;
+  }
+
+  #section-about .row-nested {
+    height: 130%;
   }
 
   p {
