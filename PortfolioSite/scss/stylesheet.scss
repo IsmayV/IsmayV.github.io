@@ -338,9 +338,19 @@ hr {
   transition: 0.5s;
 }
 
+.contact-icon:hover ~ p {
+  color: $bg-color-secondary;
+  transition: 0.5s;
+}
+
+.contact-detail a {
+  text-decoration: none;
+}
+
 .contact p {
   color: $bg-color-tertiary;
   line-height: 1.5;
+  transition: 0.5s;
 }
 
 /* carousel portfolio*/
@@ -415,6 +425,8 @@ hr {
   transition: 0.5s;
 }
 
+/* modal for carousel */
+
 .modal-img {
   width: 100%;
   height: auto;
@@ -434,6 +446,7 @@ hr {
   font-family: $subtitle;
   text-transform: uppercase;
   color: $text-color-dark;
+  font-size: $h3-size;
 }
 
 .modal-content h {

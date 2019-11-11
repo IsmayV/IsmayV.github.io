@@ -305,9 +305,19 @@ hr {
   transition: 0.5s;
 }
 
+.contact-icon:hover ~ p {
+  color: #f7dde1;
+  transition: 0.5s;
+}
+
+.contact-detail a {
+  text-decoration: none;
+}
+
 .contact p {
   color: #d9808d;
   line-height: 1.5;
+  transition: 0.5s;
 }
 
 /* carousel portfolio*/
@@ -380,6 +390,7 @@ hr {
   transition: 0.5s;
 }
 
+/* modal for carousel */
 .modal-img {
   width: 100%;
   height: auto;
@@ -399,6 +410,7 @@ hr {
   font-family: "Barlow Condensed", sans-serif;
   text-transform: uppercase;
   color: #2b2b2b;
+  font-size: 1.8vw;
 }
 
 .modal-content h {
