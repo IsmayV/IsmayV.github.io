@@ -330,14 +330,14 @@ hr {
   height: 60vh;
   object-fit: cover;
   transform: scale3d(0.9, 0.9, 0.9);
-  opacity: 0.8;
   transition: 0.5s;
 }
 
 .carousel-item img:hover {
   cursor: pointer;
   transform: scale3d(1, 1, 1);
-  opacity: 1;
+  -webkit-filter: saturate(1.4);
+  filter: saturate(1.4);
   transition: 0.5s;
 }
 
