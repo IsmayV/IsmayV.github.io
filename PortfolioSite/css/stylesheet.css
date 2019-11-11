@@ -399,11 +399,13 @@ hr {
 
 .modal, .modal-dialog {
   border: none;
+  border-radius: 0px;
 }
 
 .modal-header {
   background-color: #f7dde1;
-  border-bottom: none;
+  border: none;
+  border-radius: 0px;
 }
 
 .modal-title {
@@ -411,6 +413,11 @@ hr {
   text-transform: uppercase;
   color: #2b2b2b;
   font-size: 1.8vw;
+}
+
+.modal-content {
+  border-radius: 0px;
+  border: none;
 }
 
 .modal-content h {

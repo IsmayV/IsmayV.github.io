@@ -435,11 +435,13 @@ hr {
 
 .modal, .modal-dialog {
   border: none;
+  border-radius: 0px;
 }
 
 .modal-header {
   background-color: $bg-color-secondary;
-  border-bottom: none;
+  border: none;
+  border-radius: 0px;
 }
 
 .modal-title {
@@ -447,6 +449,11 @@ hr {
   text-transform: uppercase;
   color: $text-color-dark;
   font-size: $h3-size;
+}
+
+.modal-content {
+  border-radius: 0px;
+  border: none;
 }
 
 .modal-content h {
