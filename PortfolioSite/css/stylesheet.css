@@ -111,6 +111,15 @@ h4 {
   height: 40vh;
 }
 
+#section-contact p {
+  text-align: center;
+}
+
+.insta-icon {
+  color: white;
+  font-size: 3rem;
+}
+
 /* animations on scroll*/
 .scroll-item {
   opacity: 0;
@@ -253,9 +262,9 @@ hr {
 
 /* about image and text*/
 .about-image img {
-  width: 60%;
+  width: 80%;
   height: auto;
-  padding-left: 15%;
+  padding-left: 30%;
   margin-top: -10%;
 }
 
