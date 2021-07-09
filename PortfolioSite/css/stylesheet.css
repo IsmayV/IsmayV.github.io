@@ -66,8 +66,8 @@ h4 {
   left: 2rem;
   top: 3rem;
   z-index: 2;
-  background-color: #292929;
-  border-right: 4px solid #2f4561;
+  background-color: #212121;
+  border-right: 4px solid #e3b0f8;
 }
 
 .nav-link {
@@ -78,7 +78,7 @@ h4 {
   line-height: 1.5;
   text-transform: uppercase;
   padding: 0.5rem 1rem;
-  background: linear-gradient(to right, #2f4561 50%, transparent 50%);
+  background: linear-gradient(to right, #e3b0f8 50%, transparent 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: 0.5s;
@@ -95,17 +95,17 @@ h4 {
 /* section container */
 #section-title .container-fluid {
   padding: 0% 7%;
-  padding-bottom: 5%;
+  padding-bottom: 7%;
 }
 
 #section-portfolio .container-fluid {
   padding: 0% 7%;
-  padding-bottom: 5%;
+  padding-bottom: 7%;
 }
 
 #section-about .container-fluid {
   padding: 0% 7%;
-  padding-bottom: 5%;
+  padding-bottom: 7%;
 }
 
 #section-contact .container-fluid {
@@ -119,6 +119,10 @@ h4 {
 .insta-icon {
   color: white;
   font-size: 3rem;
+}
+
+.insta-icon:hover {
+  color: #e3b0f8;
 }
 
 /* animations on scroll*/
@@ -303,20 +307,20 @@ hr {
 }
 
 .contact-icon {
-  color: #2f4561;
+  color: #e3b0f8;
   font-size: 4vw;
-  margin: 1.5rem;
+  margin: 2.5rem;
   transition: 0.5s;
 }
 
 .contact-icon:hover {
   font-size: 5vw;
-  color: white;
+  color: #2f4561;
   transition: 0.5s;
 }
 
 .contact-icon:hover ~ p {
-  color: white;
+  color: #2f4561;
   transition: 0.5s;
 }
 
@@ -325,7 +329,7 @@ hr {
 }
 
 .contact p {
-  color: #2f4561;
+  color: #e3b0f8;
   line-height: 1.5;
   transition: 0.5s;
 }
@@ -337,7 +341,7 @@ hr {
 .row-portfolio {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 20vh;
+  padding-top: 12rem;
 
 }
 
