@@ -2,10 +2,10 @@
 /*variables for text styles*/
 /*font sizes*/
 body {
-  background-color: #212121;
+  background-color: #ffeadc;
   width: 100%;
   overflow-x: hidden;
-  color: white;
+  color: #0c149b;
   margin-bottom: -15px;
 }
 
@@ -40,19 +40,19 @@ h4 {
 
 /* colours */
 .text-light {
-  color: #fff;
+  color: #0c149b !important;
 }
 
 .text-dark {
-  color: #fff;
+  color: #0c149b;
 }
 
 .section-color {
-  background-color: #212121;
+  background-color: #fef8f5;
 }
 
-.section-white {
-  background-color: #292929;
+.section-#0c149b {
+  background-color: #ffeadc;
 }
 
 .container-fluid {
@@ -66,19 +66,19 @@ h4 {
   left: 2rem;
   top: 3rem;
   z-index: 2;
-  background-color: #212121;
-  border-right: 4px solid #e3b0f8;
+  background-color: #fef8f5;
+  border-right: 4px solid #c49ef1;
 }
 
 .nav-link {
   font-family: "Barlow Condensed", sans-serif;
   font-size: 1.5vw;
   font-weight: bold;
-  color: #fff;
+  color: #0c149b;
   line-height: 1.5;
   text-transform: uppercase;
   padding: 0.5rem 1rem;
-  background: linear-gradient(to right, #e3b0f8 50%, transparent 50%);
+  background: linear-gradient(to right, #c49ef1 50%, transparent 50%);
   background-size: 200% 100%;
   background-position: right bottom;
   transition: 0.5s;
@@ -87,7 +87,7 @@ h4 {
 .nav-link:hover {
   letter-spacing: 8px;
   background-position: -100%;
-  color: #fff;
+  color: #0c149b;
   background-position: left bottom;
   transition: 0.5s;
 }
@@ -117,7 +117,7 @@ h4 {
 }
 
 .insta-icon {
-  color: white;
+  color: #0c149b;
   font-size: 3rem;
 }
 
@@ -197,7 +197,7 @@ h4 {
 }
 
 hr {
-  border-top: 8px solid #fff;
+  border-top: 8px solid #0c149b;
   position: relative;
   z-index: 2;
 }
@@ -215,12 +215,12 @@ hr {
 .text-shadow {
   z-index: 0 !important;
   color: transparent;
-  text-shadow: 0px 2px 3px #2f4561, 0px 4px 13px #2f4561, 0px 10px 23px #2f4561;
+  text-shadow: 0px 2px 3px #c49ef1, 0px 4px 13px #c49ef1, 0px 10px 23px #c49ef1;
 }
 
 /* intro in title section */
 .intro {
-  background-color: #2f4561;
+  background-color: #c49ef1;
   height: 35%;
   position: relative;
   z-index: 2;
@@ -260,7 +260,7 @@ hr {
 }
 
 #section-about .row-nested {
-  background-color: #2f4561;
+  background-color: #c49ef1;
   width: 60%;
   height: 70%;
 }
@@ -279,12 +279,12 @@ hr {
 
 /* skills section in about */
 .skills-item {
-  color: #fff;
+  color: #fef8f5;
   text-align: center;
 }
 
 .skills-item:hover h3, .skills-item:hover .skills-img {
-  color: #fff;
+  color: #fef8f5;
   transition: 0.5s;
 }
 
@@ -294,9 +294,10 @@ hr {
 }
 
 .skills-img {
-  color: #fff;
+  color: #fef8f5;
   font-size: 5vw;
   margin-bottom: 0.5rem;
+  margin-top: 0.5rem;
   transition: 0.5s;
 }
 
@@ -307,7 +308,7 @@ hr {
 }
 
 .contact-icon {
-  color: #e3b0f8;
+  color: #0c149b;
   font-size: 4vw;
   margin: 2.5rem;
   transition: 0.5s;
@@ -315,12 +316,12 @@ hr {
 
 .contact-icon:hover {
   font-size: 5vw;
-  color: #2f4561;
+  color: #c49ef1;
   transition: 0.5s;
 }
 
 .contact-icon:hover ~ p {
-  color: #2f4561;
+  color: #c49ef1;
   transition: 0.5s;
 }
 
@@ -329,7 +330,7 @@ hr {
 }
 
 .contact p {
-  color: #e3b0f8;
+  color: #0c149b;
   line-height: 1.5;
   transition: 0.5s;
 }
@@ -387,12 +388,12 @@ hr {
 .close {
   font-size: 4em;
   text-shadow: none;
-  color: #2f4561;
+  color: #c49ef1;
   width: 100%;
 }
 
 .close:hover {
-  color: white;
+  color: #0c149b;
 }
 
 
@@ -461,13 +462,13 @@ hr {
     right: 2rem;
     left: auto;
     border-right: none;
-    border-left: 4px solid #2f4561;
+    border-left: 4px solid #c49ef1;
   }
 
   .nav-link {
     text-align: right;
     font-size: 3vw;
-    background: linear-gradient(to right, #292929 50%, #2f4561 50%);
+    background: linear-gradient(to right, #ffeadc 50%, #c49ef1 50%);
     background-size: 200% 100%;
     background-position: left bottom;
     transition: 0.5s;
@@ -476,7 +477,7 @@ hr {
   .nav-link:hover {
     letter-spacing: 5px;
     background-position: -100%;
-    color: #fff;
+    color: #0c149b;
     background-position: right bottom;
     transition: 0.5s;
   }
@@ -495,7 +496,7 @@ hr {
   }
 
   hr {
-    border-top: 4px solid #fff;
+    border-top: 4px solid #0c149b;
     width: 90%;
   }
 
@@ -547,7 +548,7 @@ hr {
 
   /* skills section in about */
   #section-about .row-nested {
-    background-color: #2f4561;
+    background-color: #c49ef1;
     width: 100%;
     height: 140%;
   }
@@ -573,7 +574,7 @@ hr {
 
   .contact-icon:hover {
     font-size: 12vw;
-    color: #292929;
+    color: #ffeadc;
     transition: 0.5s;
   }
 }
