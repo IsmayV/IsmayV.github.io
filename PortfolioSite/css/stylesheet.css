@@ -385,6 +385,10 @@ hr {
   margin: auto;
 }
 
+.modal-title, .modal-tools {
+  color: #c49ef1;
+}
+
 .close {
   font-size: 4em;
   text-shadow: none;
@@ -393,7 +397,7 @@ hr {
 }
 
 .close:hover {
-  color: #0c149b;
+  color: #c49ef1;
 }
 
 
